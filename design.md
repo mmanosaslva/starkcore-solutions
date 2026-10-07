@@ -111,7 +111,7 @@ El logo representa un sistema en movimiento alrededor de un punto de luz: proces
 | **"SOLUTIONS"** | Mayúsculas, peso ligero, tracking muy amplio (`~0.5em`), flanqueado por dos reglas horizontales azules | Seriedad y método; las reglas dan estructura y contención |
 | **Fondo transparente** | Sin caja, sin contorno | La marca se adapta al fondo (con la restricción de §2.5-D) |
 
-**Tipografía del wordmark:** sans-serif en mayúsculas, peso bold, cajas geométricas con curvas aplanadas (el `C`, `O` y `S` son casi rectangulares) y terminaciones rectas. Este rasgo es la base de la elección tipográfica del sistema (§4).
+**Tipografía del wordmark:** sans-serif en mayúsculas, peso bold, cajas geométricas con proporciones regulares y terminaciones limpias. Este rasgo guía la elección tipográfica del sistema (§4): se eligió una sans geométrica de bajo contraste, no una serif ni una display decorativa.
 
 **Proporciones:** relación aprox. 3:2 (612 × 408). El símbolo ocupa el ancho casi completo; el wordmark se alinea a los márgenes del símbolo.
 
@@ -137,7 +137,7 @@ Movimiento controlado, precisión, luz y dirección. Nunca caos, nunca quietud. 
 | **A** | El logo tiene efecto de brillo/degradado "3D" de estilo 2010s | **Se conserva el logo intacto**, pero el sistema de la interfaz es **plano y sobrio** (sin biselados, sin brillos, sin sombras metálicas) | Reproducir el efecto 3D en UI produciría el look anticuado que la marca quiere evitar; el logo aporta color y forma, no el estilo de render |
 | **B** | No existe versión monocroma ni versión sobre fondo oscuro | **Regla temporal**: el logo se usa únicamente sobre fondos claros (blanco, `#FBFCFE`, `#F3F6FB`). No se altera el archivo. | Garantiza legibilidad sin modificar la marca. Si más adelante se aprueba una versión blanca/negro sólido, se documentará aquí |
 | **C** | La paleta del logo es 100% fría (verificado: **0 píxeles con dominancia roja**) | Los colores semánticos de estado (success/warning/error) **son funcionales, no decorativos**: solo aparecen en formularios, validaciones y estados de sistema | Se evita contaminar la firma cromática con calidez que la marca no tiene |
-| **D** | No hay tipografía oficial asociada al wordmark | Se eligió **Space Grotesk** para títulos por curvas aplanadas y terminaciones rectas, el rasgo más cercano al logo | Permite coherencia sin redibujar la marca |
+| **D** | No hay tipografía oficial asociada al wordmark | Se eligió **DM Sans** para títulos y cuerpo + **Roboto Mono** para etiquetas: sans geométricas de Google Fonts, coherentes con las formas geométricas del logo | Primera elección (Space Grotesk + IBM Plex) se descartó tras evaluarla con el diseño de Stitch: la personalidad de la fuente peleaba con el layout (feedback del proyecto) |
 | **E** | No está definido el tono de voz por escrito | Español neutro, de segunda persona (**tú**), directo, sin jerga innecesaria ni promesas vacías | Cercanía con PYMES colombianas sin perder seriedad |
 | **F** | El logo tiene fondo transparente y detalle fino (destello) | Tamaño mínimo de uso: **120 px** de ancho en pantalla; margen de respiro mínimo = **25%** del alto del logo | Por debajo de eso la estrella central y "SOLUTIONS" se colapsan |
 
@@ -274,44 +274,48 @@ El logo **no contiene ningún color cálido** (verificado: 0 píxeles con R > B)
 
 ### 4.1 Estrategia y elección
 
-**Tres familias, tres roles, sin solapamiento.**
+**Dos familias de Google Fonts, roles claros: DM Sans (todo el texto) + Roboto Mono (etiquetas).**
 
-#### Display — **Space Grotesk**
-Grotesca geométrica con **curvas aplanadas y terminaciones rectas** (el `C`, `O`, `S` son cajas cuasi-rectangulares) — el rasgo tipográfico más cercano al wordmark del logo. Aporta carácter tecnológico sin caer en lo sci-fi.
+#### Display y cuerpo — **DM Sans**
+Sans serif geométrica de bajo contraste, con cajas limpias y terminaciones rectas: el mismo lenguaje geométrico que el wordmark, sin excentricidades. Diseñada originalmente para títulos **y** texto pequeño en pantalla, por lo que una sola familia sostiene toda la jerarquía (el peso y el tamaño hacen el trabajo, no el cambio de fuente). Variable (100–1000), soporte completo de `ñ` y acentos, y está disponible en Stitch y Google Fonts.
+
+> **Por qué no la anterior:** la primera propuesta (Space Grotesk + IBM Plex Sans/Mono) se evaluó contra el diseño generado en Stitch y no funcionaba: la personalidad marcada de Space Grotesk peleaba con el layout. Se cambió por una familia más neutra y versátil.
 
 **Descartadas y por qué:**
-- *Orbitron / Rajdhani / Chakra Petch / Michroma* → look gamer/sci-fi, percibido como amateur.
-- *Inter / Manrope / Plus Jakarta Sans / Outfit* → demasiado genéricas; son el default de plantillas y artefactos de IA (efecto "AI slop").
-- *Archivo* → sólida pero demasiado industrial/editorial, menor vínculo con el logo.
-- *Sora* → demasiado redonda y suave para una marca de precisión.
+- *Inter* → **prohibida en este proyecto**: default de plantillas y artefactos de IA (efecto "AI slop").
+- *Space Grotesk* → descartada tras prueba con el diseño de Stitch (ver arriba).
+- *IBM Plex Sans/Mono* → demasiado institucionales y frías para el tono de cercanía buscado.
+- *Poppins / Montserrat* → look típico de agencia de marketing en LatAm: alto riesgo de parecer plantilla.
+- *Josefin Sans / Raleway / Playfair / Lora / Arvo* → x baja o estética lujo/editorial: no corresponden con tecnología B2B.
+- *Object Sans / Ranade / Soria / Sreda* (de la guía de Figma) → fuentes de pago, no disponibles en Google Fonts ni en Stitch.
+- *Orbitron / Rajdhani / Chakra Petch* → look gamer/sci-fi, percibido como amateur.
 
-#### Cuerpo — **IBM Plex Sans**
-Diseñada explícitamente para una empresa tecnológica: transmite ingeniería y seriedad sin frialdad; su estructura humanista aporta **cercanía**. Excelente soporte de acentos y `ñ` en español. Alternativa profesional a Inter sin su saturación en el mercado.
+*Fuente de referencia para la selección: guía "24 mejores fuentes para sitios web" de Figma (figma.com/resource-library), filtrada por los criterios anteriores.*
 
-#### Técnica/etiquetas — **IBM Plex Mono**
-Eyebrows, etiquetas, numeración de pasos, estados y datos. Coherente con Plex Sans (misma familia diseñada) y ecos directo del tracking amplio de "SOLUTIONS".
+#### Técnica/etiquetas — **Roboto Mono**
+Eyebrows, badges, numeración de pasos y datos: mayúsculas con tracking amplio, eco directo del "SOLUTIONS" del logo. Mismo ecosistema Google Fonts que DM Sans (sin choque de voz entre familias, a diferencia del par Plex anterior).
 
 ### 4.2 Escala tipográfica
 
 | Rol | Familia | Móvil → Desktop | Peso | Line-height | Tracking |
 |---|---|---|---|---|---|
-| Display (hero) | Space Grotesk | 2.25rem (36) → **3.75rem (60)** | 700 | 1.05 | −0.02em |
-| H2 (sección) | Space Grotesk | 1.75rem (28) → **2.75rem (44)** | 700 | 1.12 | −0.015em |
-| H3 | Space Grotesk | 1.375rem (22) → **1.75rem (28)** | 600 | 1.25 | −0.01em |
-| H4 / card title | Space Grotesk | 1.125rem → 1.25rem | 600 | 1.3 | −0.005em |
-| Lead (párrafo guía) | IBM Plex Sans | 1.0625rem → **1.125rem (18)** | 400 | 1.7 | 0 |
-| Body | IBM Plex Sans | **1rem (16)** | 400 | 1.65 | 0 |
-| Small / ayuda | IBM Plex Sans | 0.875rem (14) | 400 | 1.6 | 0 |
-| **Eyebrow** | IBM Plex Mono | 0.75rem (12) | 500 | 1.2 | **0.14em**, UPPERCASE |
-| Badge / chip | IBM Plex Mono | 0.6875rem (11) | 500 | 1.2 | **0.1em**, UPPERCASE |
-| Button | IBM Plex Sans | 0.9375rem (15) | 600 | 1 | 0 |
-| Dato/cifra | Space Grotesk | 2rem → 3rem | 700 | 1 | −0.02em |
-| Código / técnico | IBM Plex Mono | 0.875rem | 400 | 1.5 | 0 |
+| Display (hero) | DM Sans | 2.25rem (36) → **3.75rem (60)** | 700 | 1.05 | −0.02em |
+| H2 (sección) | DM Sans | 1.75rem (28) → **2.75rem (44)** | 700 | 1.12 | −0.015em |
+| H3 | DM Sans | 1.375rem (22) → **1.75rem (28)** | 600 | 1.25 | −0.01em |
+| H4 / card title | DM Sans | 1.125rem → 1.25rem | 600 | 1.3 | −0.005em |
+| Lead (párrafo guía) | DM Sans | 1.0625rem → **1.125rem (18)** | 400 | 1.7 | 0 |
+| Body | DM Sans | **1rem (16)** | 400 | 1.65 | 0 |
+| Small / ayuda | DM Sans | 0.875rem (14) | 400 | 1.6 | 0 |
+| **Eyebrow** | Roboto Mono | 0.75rem (12) | 500 | 1.2 | **0.14em**, UPPERCASE |
+| Badge / chip | Roboto Mono | 0.6875rem (11) | 500 | 1.2 | **0.1em**, UPPERCASE |
+| Button | DM Sans | 0.9375rem (15) | 600 | 1 | 0 |
+| Dato/cifra | DM Sans | 2rem → 3rem | 700 | 1 | −0.02em |
+| Código / técnico | Roboto Mono | 0.875rem | 400 | 1.5 | 0 |
 
 ### 4.3 Reglas de uso
 
 1. **Titulares en sentence case** (no TODO MAYÚSCULAS). Las mayúsculas se reservan a eyebrows, badges y botones cortos.
-2. **Máximo 2 familias visibles por pantalla** (Display + Plex, con Mono solo en etiquetas).
+2. **Máximo 2 familias por pantalla** (DM Sans para todo el texto + Roboto Mono solo en etiquetas).
 3. **Medida de lectura**: máximo **65 caracteres** por línea en párrafos.
 4. **Jerarquía por peso y tamaño, no por color**: el color secunda.
 5. Titular de hero: **máximo 12 palabras**; subtítulo: 1–2 líneas.
@@ -321,12 +325,13 @@ Eyebrows, etiquetas, numeración de pasos, estados y datos. Coherente con Plex S
 ### 4.4 Carga y fallbacks
 
 ```css
---font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
---font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
---font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+--font-display: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+--font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+--font-mono: 'Roboto Mono', ui-monospace, monospace;
 ```
 
-- Carga con `next/font` (o Google Fonts) — `display=swap`, pesos 400/500/600/700, subconjunto `latin` + `latin-ext` (para `ñ`, `á`, `é`, `í`, `ó`, `ú`, `ü`).
+- Carga con `next/font` (o Google Fonts) — `display=swap`, pesos DM Sans **400/500/600/700** (familia variable 100–1000) y Roboto Mono **400/500**, subconjunto `latin` + `latin-ext` (para `ñ`, `á`, `é`, `í`, `ó`, `ú`, `ü`).
+- `--font-display` y `--font-sans` apuntan a la misma familia: la jerarquía se construye con **peso y tamaño**, no con cambios de fuente.
 - Fallback visible y aceptable si la fuente falla: el sistema no depende de una fuente exótica.
 
 ---
@@ -489,7 +494,7 @@ La implementación usa shadcn/ui como base **nunca como estética final**. Todo 
 
 - Banda **navy** `#001038`, sin excepción.
 - Texto principal blanco; secundario `#A8B4CC` (8.90 ✓); links `#BDE0FD` → hover cian `#0BDBFF`.
-- Estructura: logo (versión clara pendiente §2.5-B → sobre navy se usa el logo **solo si** se aprueba versión monocroma; hasta entonces, wordmark en texto blanco), 3–4 columnas de enlaces, contacto directo (email, WhatsApp), línea inferior con `IBM Plex Mono` 12px (©, ubicación "Barranquilla, Colombia").
+- Estructura: logo (versión clara pendiente §2.5-B → sobre navy se usa el logo **solo si** se aprueba versión monocroma; hasta entonces, wordmark en texto blanco), 3–4 columnas de enlaces, contacto directo (email, WhatsApp), línea inferior con `Roboto Mono` 12px (©, ubicación "Barranquilla, Colombia").
 - Aire generoso: padding `64px` superior/inferior.
 
 ### 7.7 Badges y Eyebrows
@@ -594,7 +599,7 @@ La web es una **landing corporativa B2B**. En menos de 10 segundos debe responde
 | 1 | **Hero** | Idea central en una frase + CTA | Asimétrico **7/5**: titular izquierda, visual derecha (diagrama "antes → después" de un proceso). Banda A. Corte angular firma en el visual |
 | 2 | **Problemas** ("¿Te suena familiar?") | Identificación del dolor: correos/pedidos manuales, SECOP manual, datos desconectados, tareas repetitivas | Banda B, 3–4 cards numeradas `01–04`, sin iconos decorativos pesados |
 | 3 | **Soluciones** | Servicios concretos (automatización, integraciones, correos/pedidos, notificaciones email/WhatsApp, SECOP, web, herramientas internas, datos y APIs) | Banda A, grid 3–4 col con **iconografía lineal 2px** y radio del trazo consistente |
-| 4 | **Casos / flujos** | Prueba tangible: 3 flujos en formato **Problema → Solución → Resultado** | Banda B, tarjetas horizontales; en móvil se apilan. Cifras de resultado en Space Grotesk |
+| 4 | **Casos / flujos** | Prueba tangible: 3 flujos en formato **Problema → Solución → Resultado** | Banda B, tarjetas horizontales; en móvil se apilan. Cifras de resultado en DM Sans 700 |
 | 5 | **Cómo trabajamos** | Reducir la incertidumbre de contratar | Banda A, 4 pasos con numeración mono `01–04` y línea conectora |
 | 6 | **Por qué StarkCore** | Diferenciales: cercanía local (Barranquilla), soluciones a medida, acompañamiento, tecnología como medio | **Banda navy** (1ª), acentos cian, texto blanco/blue-200 |
 | 7 | **Presencia digital / web** | Servicio de sitios web como puerta de entrada | Banda A o integrado en Soluciones (decidir según densidad) |
@@ -623,7 +628,7 @@ La web es una **landing corporativa B2B**. En menos de 10 segundos debe responde
 
 - [ ] El logo aparece sin modificar, solo sobre fondos claros, tamaño ≥120px.
 - [ ] Cada color usado está en §3.2–3.5; contraste AA verificado.
-- [ ] Se usan Space Grotesk + IBM Plex Sans/Mono — **sin Inter**.
+- [ ] Se usan DM Sans + Roboto Mono — **sin Inter**.
 - [ ] Sin degradados morados ni gradientes de fondo.
 - [ ] Radios variados (8/12/16px), no uniformes.
 - [ ] Contenido mayormente alineado a la izquierda (hero no centrado).
@@ -648,8 +653,8 @@ IDENTIDAD (extraída del logo adjunto):
 - Navy #001038 (texto, botón primario, bandas oscuras)
 - Azul #0088F8 (énfasis, acentos) · Cian #0BDBFF (solo sobre navy)
 - Fondos: blanco tintado #FBFCFE y surface #F3F6FB
-- Tipografía: Space Grotesk (títulos) + IBM Plex Sans (cuerpo) + IBM Plex Mono
-  (etiquetas en mayúsculas con tracking amplio)
+- Tipografía: DM Sans (títulos y cuerpo) + Roboto Mono (etiquetas en
+  mayúsculas con tracking amplio)
 - Estética: plana, precisa, con aire; sin gradientes de fondo, sin morado,
   sin neon, sin esquinas todas redondeadas por igual.
 
@@ -674,7 +679,7 @@ Reglas: títulos alineados a la izquierda, bandas alternando blanco/gris azulado
 ## Apéndice B — Checklist de implementación
 
 1. [ ] `globals.css` con las variables de §7.1 (convertir HEX a HSL/OKLCH).
-2. [ ] Fuentes cargadas con `next/font` (Space Grotesk, IBM Plex Sans, IBM Plex Mono).
+2. [ ] Fuentes cargadas con `next/font` (DM Sans, Roboto Mono).
 3. [ ] Tailwind: `container` en 1200px, radios mapeados (`--radius-*`), sombras tintadas.
 4. [ ] shadcn/ui instalado: button, card, input, textarea, label, badge, sheet, dialog, accordion, separator, skeleton, form.
 5. [ ] Variantes de botón reescritas (primary navy / accent azul-con-texto-navy / outline / ghost).
