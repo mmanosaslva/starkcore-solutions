@@ -3,7 +3,7 @@
 > **Archivo obligatorio para todo el desarrollo.** Toda decisión técnica y de diseño debe alinearse con estas reglas.
 > Si una regla entra en conflicto con una tarea, primero se cambia este documento (con aprobación) y después se implementa.
 >
-> **Versión** 0.1 · **Estado**: en fase de descubrimiento (se completará con el plan aprobado)
+> **Versión** 0.2 · **Estado**: vigente (Fase 0 aprobada 2026-10-08). §2 y §4.1/4.2/4.4 no aplican al MVP (`plan-sitio.md` decisión #6).
 
 ---
 
@@ -14,7 +14,7 @@
 3. **Responsive obligatorio**: mobile-first, sin scroll horizontal a 360px, áreas táctiles ≥ 44px, cumplir §6.3 de `design.md`.
 4. **Iconografía: una sola familia** — `lucide-react` (vía shadcn/ui). Prohibido mezclar con Material Symbols u otras.
 5. **Todos los componentes se construyen sobre shadcn/ui + Tailwind**, personalizados con los tokens de `design.md` (nunca con estilo por defecto).
-6. El logo oficial (v1.1: `stitch/logo-sitioweb.png` / `stitch/code.html`, ver `design.md` §2.5-G) se usa **sin modificar**, preferiblemente sobre fondos claros (§2.5-B de `design.md`).
+6. El logo oficial (v1.1: `stitch/logo-sitioweb.png` / `stitch/code.html`, ver `design.md` §2.5-G) se usa **sin modificar**, preferiblemente sobre fondos claros (§2.5-B de `design.md`). Solo se permiten las variantes aprobadas en `design.md` §2.5-H.
 7. **Accesibilidad**: contraste AA mínimo, foco visible, teclado operable, `prefers-reduced-motion` respetado (§8.5).
 
 ## 2. Reglas de base de datos
@@ -34,8 +34,8 @@
 3. **SRP en código**: servicios, utilidades y componentes con una sola responsabilidad; nada de archivos "god".
 4. **Next.js (App Router) + React + Tailwind + shadcn/ui** — cada tecnología con la razón documentada en `docs/`.
 5. Separación clara: componentes UI ≠ lógica de negocio ≠ acceso a datos.
-6. **Idioma español por defecto**; todo texto visible pasa por el sistema i18n (nunca strings hardcodeados en componentes).
-7. Lint + formato + typecheck limpios antes de cada commit (`eslint`, `prettier`, `tsc --noEmit`).
+6. **Idioma español por defecto**; todo texto visible pasa por el sistema i18n (nunca strings hardcodeados en componentes). En el MVP hay un solo idioma, pero la estructura i18n es obligatoria (`plan-sitio.md` §2.4).
+7. Lint + formato + typecheck limpios antes de cada commit (`eslint`, `prettier --check`, `tsc --noEmit`), y verificados en CI en cada PR (`plan-seguridad.md` §6).
 
 ## 4. Reglas de seguridad
 

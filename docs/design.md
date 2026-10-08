@@ -3,9 +3,9 @@
 > **Archivo oficial de filosofía de marca y sistema de diseño.**
 > Fuente de verdad para el sitio web, materiales comerciales, presentaciones, redes sociales y cualquier producto digital futuro.
 >
-> **Versión** 1.1 · **Estado**: vigente · **Fuente visual**: `stitch/logo-sitioweb.png` (PNG) y `stitch/code.html` (SVG vectorial)
+> **Versión** 1.2 · **Estado**: vigente · **Fuente visual**: `stitch/logo-sitioweb.png` (PNG) y `stitch/code.html` (SVG vectorial)
 > **Regla raíz**: el logo existente es el punto de partida de todo el sistema. El logo no se modifica, no se reemplaza ni se regenera.
-> **Historial**: v1.0 (2026-10-06) analizó el logo original `starkcore-logo.png` ("S" con órbita). v1.1 (2026-10-08) adopta el **nuevo símbolo** (3 barras + punto) definido por el dueño del proyecto — ver §2.5-G. El wordmark bicolor y la paleta se conservan.
+> **Historial**: v1.0 (2026-10-06) analizó el logo original `starkcore-logo.png` ("S" con órbita). v1.1 (2026-10-08) adopta el **nuevo símbolo** (3 barras + punto) definido por el dueño del proyecto — ver §2.5-G. El wordmark bicolor y la paleta se conservan. v1.2 (2026-10-08, revisión de docs) corrige la descripción del logo (§2.2, §2.5-F), define variantes (§2.5-H) y ajusta §7.1, §7.6, §9.2 y §9.4.
 
 ---
 
@@ -103,7 +103,7 @@ El nuevo símbolo representa procesos que se ordenan y avanzan: tres barras diag
 
 | Elemento | Descripción | Significado de marca |
 |---|---|---|
-| **Tres barras diagonales** | Tres trazos gruesos paralelos inclinados ~45° (corte angular en los extremos), en azul medio con degradado sutil | El proceso mismo: flujos repetibles, en ritmo, que avanzan con método |
+| **Tres barras diagonales** | Tres trazos gruesos paralelos inclinados (extremos redondeados con corte en diagonal), cada uno en **color plano**: `#001038`, `#0050F0`, `#0088F8` | El proceso mismo: flujos repetibles, en ritmo, que avanzan con método |
 | **Escalera de azules** | Barra más oscura (navy) → media → más viva (`#0088F8`) | Progresión: de lo manual/pesado a lo automatizado/claro — **transformación** |
 | **Punto cian** | Círculo `#0BDBFF` en la punta superior derecha, alineado con la dirección de las barras | El **core**: el núcleo que emite valor; la chispa que culmina el proceso |
 | **Wordmark bicolor** | `Stark` en tinta navy (`#001038`) + `Core` en azul vivo (`#0088F8`), unión exacta | El nombre codifica la marca: **solidez (navy) → tecnología (azul)** |
@@ -112,7 +112,7 @@ El nuevo símbolo representa procesos que se ordenan y avanzan: tres barras diag
 
 **Tipografía del wordmark:** sans-serif geométrica en minúscula/mayúscula mixta ("StarkCore", no todo mayúsculas), peso bold, cajas limpias. Este rasgo guía la elección tipográfica del sistema (§4): sans geométrica de bajo contraste.
 
-**Proporciones:** lockup horizontal ~5:2. El símbolo ocupa la cuota izquierda; "SOLUTIONS" se alinea al inicio del wordmark.
+**Proporciones:** lockup horizontal ~5:1 (SVG 340×70). El símbolo ocupa la cuota izquierda; "SOLUTIONS" se alinea al inicio del wordmark.
 
 ### 2.3 Sensación que debe producir la marca
 
@@ -134,12 +134,13 @@ Dirección, ritmo y precisión. Las barras sugieren avance continuo; el punto, u
 | # | Ambigüedad detectada | Decisión tomada | Razonamiento |
 |---|---|---|---|
 | **A** | El logo original tenía efecto de brillo/degradado "3D" de estilo 2010s | **Se conserva el logo intacto**, pero el sistema de la interfaz es **plano y sobrio** (sin biselados, sin brillos, sin sombras metálicas) | Reproducir el efecto 3D en UI produciría el look anticuado que la marca quiere evitar; el logo aporta color y forma, no el estilo de render |
-| **B** | El logo no tiene versión monocroma ni versión sobre fondo oscuro | **Regla**: el logo se usa preferiblemente sobre fondos claros (blanco, `#FBFCFE`, `#F3F6FB`). En bandas navy (footer), usar la versión con wordmark en blanco (`stitch/logo-blanco.png`, pendiente de generar) o wordmark en texto blanco. No se altera el archivo original. | Garantiza legibilidad sin modificar la marca. Si más adelante se aprueba una versión blanca/negro sólido, se documentará aquí |
+| **B** | El logo no tiene versión monocroma ni versión sobre fondo oscuro | **Regla**: el logo se usa preferiblemente sobre fondos claros (blanco, `#FBFCFE`, `#F3F6FB`). En bandas navy (footer), usar la variante sobre navy de §2.5-H. No se altera el archivo original. | Garantiza legibilidad sin modificar la marca. Si más adelante se aprueba una versión blanca/negro sólido, se documentará aquí |
 | **C** | La paleta del logo es 100% fría | Los colores semánticos de estado (success/warning/error) **son funcionales, no decorativos**: solo aparecen en formularios, validaciones y estados de sistema | Se evita contaminar la firma cromática con calidez que la marca no tiene |
 | **D** | No hay tipografía oficial asociada al wordmark | Se eligió **DM Sans** para títulos y cuerpo + **Roboto Mono** para etiquetas: sans geométricas de Google Fonts, coherentes con las formas geométricas del logo | Primera elección (Space Grotesk + IBM Plex) se descartó tras evaluarla con el diseño de Stitch: la personalidad de la fuente peleaba con el layout (feedback del proyecto) |
 | **E** | No está definido el tono de voz por escrito | Español neutro, de segunda persona (**tú**), directo, sin jerga innecesaria ni promesas vacías | Cercanía con PYMES colombianas sin perder seriedad |
-| **F** | El logo original tiene fondo transparente y detalle fino (destello) | Tamaño mínimo de uso: **120 px** de ancho en pantalla; margen de respiro mínimo = **25%** del alto del logo | Por debajo de eso el detalle fino se colapsa |
-| **G** | El dueño del proyecto definió un **nuevo símbolo** (3 barras + punto cian) que reemplaza a la "S" con órbita y flecha del logo original | **Se adopta el nuevo logo** (`stitch/logo-sitioweb.png` + `stitch/code.html`) como fuente visual oficial. El wordmark bicolor ("Stark" navy + "Core" azul) y la paleta se conservan. El logo original queda como referencia histórica en `starkcore-logo.png` | Decisión del dueño del proyecto (2026-10-08). El nuevo símbolo es más plano, geométrico y contemporáneo; encaja mejor con el sistema de interfaz plano y sobrio |
+| **F** | El logo tiene fondo transparente y un subtítulo "SOLUTIONS" muy pequeño | Tamaño mínimo del **lockup completo**: **120 px** de ancho en pantalla; margen de respiro mínimo = **25%** del alto del logo. El símbolo solo (favicon) sigue §2.5-H | Por debajo de 120 px "SOLUTIONS" deja de leerse |
+| **G** | El dueño del proyecto definió un **nuevo símbolo** (3 barras + punto cian) que reemplaza a la "S" con órbita y flecha del logo original | **Se adopta el nuevo logo** (`stitch/logo-sitioweb.png` + `stitch/code.html`) como fuente visual oficial. El wordmark bicolor ("Stark" navy + "Core" azul) y la paleta se conservan. El logo original queda como referencia histórica en el historial de git (`starkcore-logo.png`, commit `7771672`) | Decisión del dueño del proyecto (2026-10-08). El nuevo símbolo es más plano, geométrico y contemporáneo; encaja mejor con el sistema de interfaz plano y sobrio |
+| **H** | Sobre fondo navy, la barra `#001038` y "Stark" desaparecen; un favicon de 16–32 px no puede llevar el wordmark | **Variantes aprobadas (únicas permitidas, excepción de `prohibiciones.md` §2.2):** 1) **Logo sobre navy** (`stitch/logo-navy.svg`, a generar en la Fase 2 a partir de `code.html`): idéntico al original salvo tres colores: barra 1 `#001038` → `#FFFFFF`, "Stark" → `#FFFFFF`, "SOLUTIONS" → `#A8B4CC`. 2) **Símbolo solo** (3 barras + punto, sin wordmark) para favicon, ícono de app y avatar, sobre fondo claro; tamaño mínimo 16 px. Geometría, proporciones y los demás colores no cambian | Mantiene la legibilidad en el footer navy y en pestañas del navegador sin redibujar la marca. Reemplaza el `logo-blanco.png` pendiente de §2.5-B |
 
 ---
 
@@ -445,7 +446,7 @@ La implementación usa shadcn/ui como base **nunca como estética final**. Todo 
 5. Transiciones de estado: `150ms` en color/borde, `180ms` en elevación.
 6. **No se usan sin modificar:** variantes `destructive` por defecto (se recolorea con `#C0392B` de §3.5), ni el tema oscuro default.
 
-**Componentes shadcn a instalar:** `button`, `card`, `input`, `textarea`, `label`, `badge`, `sheet` (menú móvil), `dialog` (modales), `accordion` (FAQ), `separator`, `skeleton`, `form`.
+**Componentes shadcn a instalar en el MVP:** `button`, `card`, `input`, `textarea`, `label`, `badge`, `sheet` (menú móvil), `separator`, `form`. `dialog`, `accordion` (FAQ) y `skeleton` **solo** si una sección aprobada los necesita (`prohibiciones.md` §1.5).
 **Compuestos propios (no shadcn):** `Navbar`, `Footer`, `Hero`, `SectionHeader`, `ServiceCard`, `ProcessSteps`, `CtaBand`, `Eyebrow`.
 
 ### 7.2 Buttons
@@ -494,7 +495,7 @@ La implementación usa shadcn/ui como base **nunca como estética final**. Todo 
 
 - Banda **navy** `#001038`, sin excepción.
 - Texto principal blanco; secundario `#A8B4CC` (8.90 ✓); links `#BDE0FD` → hover cian `#0BDBFF`.
-- Estructura: logo en versión clara (wordmark en blanco sobre navy, o versión monocroma aprobada — ver §2.5-B), 3–4 columnas de enlaces, contacto directo (email, WhatsApp), línea inferior con `Roboto Mono` 12px (©, ubicación "Barranquilla, Colombia").
+- Estructura: logo en la variante sobre navy (§2.5-H), 3–4 columnas de enlaces, contacto directo (email, WhatsApp), línea inferior con `Roboto Mono` 12px (©, ubicación "Barranquilla, Colombia").
 - Aire generoso: padding `64px` superior/inferior.
 
 ### 7.7 Badges y Eyebrows
@@ -603,7 +604,7 @@ La web es una **landing corporativa B2B**. En menos de 10 segundos debe responde
 | 5 | **Cómo trabajamos** | Reducir la incertidumbre de contratar | Banda A, 4 pasos con numeración mono `01–04` y línea conectora |
 | 6 | **Por qué StarkCore** | Diferenciales: cercanía local (Barranquilla), soluciones a medida, acompañamiento, tecnología como medio | **Banda navy** (1ª), acentos cian, texto blanco/blue-200 |
 | 7 | **Presencia digital / web** | Servicio de sitios web como puerta de entrada | Banda A o integrado en Soluciones (decidir según densidad) |
-| 8 | **CTA final + contacto** | Conversión: formulario corto (nombre, empresa, email, necesidad) o WhatsApp/email directo | Banda navy (2ª) o blue-50 con card; centrado permitido aquí |
+| 8 | **CTA final + contacto** | Conversión: formulario corto (nombre, empresa, email, necesidad) o WhatsApp/email directo | **Banda blue-50** con card (no navy: el footer que sigue ya es navy y §3.7 prohíbe dos navy seguidas); centrado permitido aquí |
 | 9 | **Footer** | Contacto, navegación, identidad | Navy (§7.6) |
 
 ### 9.3 Flujo de trabajo: Stitch → shadcn/ui
@@ -626,7 +627,7 @@ La web es una **landing corporativa B2B**. En menos de 10 segundos debe responde
 
 ### 9.4 Criterios de éxito (anti-plantilla)
 
-- [ ] El logo aparece sin modificar, solo sobre fondos claros, tamaño ≥120px.
+- [ ] El logo aparece sin modificar sobre fondos claros (≥120px), y en el footer navy solo en la variante de §2.5-H.
 - [ ] Cada color usado está en §3.2–3.5; contraste AA verificado.
 - [ ] Se usan DM Sans + Roboto Mono — **sin Inter**.
 - [ ] Sin degradados morados ni gradientes de fondo.
@@ -681,13 +682,13 @@ Reglas: títulos alineados a la izquierda, bandas alternando blanco/gris azulado
 1. [ ] `globals.css` con las variables de §7.1 (convertir HEX a HSL/OKLCH).
 2. [ ] Fuentes cargadas con `next/font` (DM Sans, Roboto Mono).
 3. [ ] Tailwind: `container` en 1200px, radios mapeados (`--radius-*`), sombras tintadas.
-4. [ ] shadcn/ui instalado: button, card, input, textarea, label, badge, sheet, dialog, accordion, separator, skeleton, form.
+4. [ ] shadcn/ui instalado: los componentes del MVP listados en §7.1.
 5. [ ] Variantes de botón reescritas (primary navy / accent azul-con-texto-navy / outline / ghost).
 6. [ ] Navbar sticky con borde al scroll, footer navy, Eyebrow propio.
 7. [ ] Secciones en el orden de §9.2 con bandas de §3.7.
 8. [ ] Motion solo según §8.3 + `prefers-reduced-motion`.
 9. [ ] Auditoría de contraste (§3.6) y responsive 360px.
-10. [ ] Logo nuevo (`stitch/logo-sitioweb.png`) sin modificar; sobre fondos claros preferiblemente; en footer navy usar wordmark en blanco (§2.5-B).
+10. [ ] Logo nuevo (`stitch/logo-sitioweb.png` / `code.html`) sin modificar sobre fondos claros; en footer navy y favicon, solo las variantes de §2.5-H.
 
 ---
 
