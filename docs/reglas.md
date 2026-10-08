@@ -14,10 +14,12 @@
 3. **Responsive obligatorio**: mobile-first, sin scroll horizontal a 360px, áreas táctiles ≥ 44px, cumplir §6.3 de `design.md`.
 4. **Iconografía: una sola familia** — `lucide-react` (vía shadcn/ui). Prohibido mezclar con Material Symbols u otras.
 5. **Todos los componentes se construyen sobre shadcn/ui + Tailwind**, personalizados con los tokens de `design.md` (nunca con estilo por defecto).
-6. El logo `starkcore-logo.png` se usa **sin modificar** y solo sobre fondos claros (§2.5 de `design.md`).
+6. El logo oficial (v1.1: `stitch/logo-sitioweb.png` / `stitch/code.html`, ver `design.md` §2.5-G) se usa **sin modificar**, preferiblemente sobre fondos claros (§2.5-B de `design.md`).
 7. **Accesibilidad**: contraste AA mínimo, foco visible, teclado operable, `prefers-reduced-motion` respetado (§8.5).
 
 ## 2. Reglas de base de datos
+
+> **Estado: NO APLICABLES al MVP.** El sitio de marketing (`plan-sitio.md`) no usa base de datos. Estas reglas se activan automáticamente si el proyecto incorpora una BD (nuevo producto, blog con CMS, etc.) — y entonces el esquema se diseña y aprueba en `diseño_bd.md` antes de cualquier migración.
 
 1. **3FN (Tercera Forma Normal)**: todo el esquema relacional debe estar en 3FN. Sin atributos redundantes, sin dependencias parciales ni transitivas.
 2. **SRP (Single Responsibility Principle)**: cada tabla/modelo tiene una responsabilidad única; cada capa de acceso a datos tiene una razón única para cambiar.
@@ -37,11 +39,15 @@
 
 ## 4. Reglas de seguridad
 
-1. **Contraseñas siempre con hash** — Argon2id (o bcrypt como alternativa). **Nunca** texto plano, nunca MD5/SHA1.
-2. **Nunca criptografía propia**: usar librerías y frameworks open source probados para autenticación y sesiones.
+> El plan técnico completo vive en `plan-seguridad.md`. Estas son las reglas mínimas. Las reglas 1, 2 y 4 (auth/sesiones) **no aplican al MVP** (no hay usuarios); se activan si algún día hay autenticación.
+
+1. **Contraseñas siempre con hash** — Argon2id (o bcrypt como alternativa). **Nunca** texto plano, nunca MD5/SHA1. *(No aplica al MVP: no hay usuarios.)*
+2. **Nunca criptografía propia**: usar librerías y frameworks open source probados para autenticación y sesiones. *(No aplica al MVP: no hay auth.)*
 3. Secretos y claves **solo en variables de entorno** (`.env` nunca se commitea).
-4. Sesiones en cookies HTTP-only; rutas protegidas verificadas **en el servidor** (el middleware no basta).
+4. Sesiones en cookies HTTP-only; rutas protegidas verificadas **en el servidor** (el middleware no basta). *(No aplica al MVP: no hay sesiones.)*
 5. Dependencias nuevas: justificadas, revisadas y documentadas en `docs/`.
+6. **Sin login, sin registro, sin base de datos de usuarios** en el sitio de marketing — la superficie de ataque se reduce al formulario de contacto (`plan-seguridad.md` §4).
+7. **HTTPS obligatorio** con HSTS; cabeceras de seguridad (CSP, nosniff, frame-ancestors) — ver `plan-seguridad.md` §3.
 
 ## 5. Reglas de proceso
 

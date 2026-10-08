@@ -3,8 +3,9 @@
 > **Archivo oficial de filosofía de marca y sistema de diseño.**
 > Fuente de verdad para el sitio web, materiales comerciales, presentaciones, redes sociales y cualquier producto digital futuro.
 >
-> **Versión** 1.0 · **Estado**: vigente · **Fuente visual**: `starkcore-logo.png` (612 × 408 px, RGBA, fondo transparente)
+> **Versión** 1.1 · **Estado**: vigente · **Fuente visual**: `stitch/logo-sitioweb.png` (PNG) y `stitch/code.html` (SVG vectorial)
 > **Regla raíz**: el logo existente es el punto de partida de todo el sistema. El logo no se modifica, no se reemplaza ni se regenera.
+> **Historial**: v1.0 (2026-10-06) analizó el logo original `starkcore-logo.png` ("S" con órbita). v1.1 (2026-10-08) adopta el **nuevo símbolo** (3 barras + punto) definido por el dueño del proyecto — ver §2.5-G. El wordmark bicolor y la paleta se conservan.
 
 ---
 
@@ -92,54 +93,53 @@ Las PYMES realizan procesos de forma manual o fragmentada: revisan oportunidades
 
 ### 2.1 Concepto visual central
 
-> **Un núcleo (core) que conecta, impulsa y proyecta hacia adelante.**
+> **Tres flujos que ascienden hacia un núcleo luminoso.**
 
-El logo representa un sistema en movimiento alrededor de un punto de luz: procesos que se conectan (órbita), se ordenan (núcleo/estrella) y avanzan (flecha ascendente). Ese es exactamente el servicio de StarkCore.
+El nuevo símbolo representa procesos que se ordenan y avanzan: tres barras diagonales paralelas (ritmo, repetición, método) que escalan en intensidad de color —de la solidez navy al azul vivo— hasta encontrar el punto cian: el **core**, el resultado que emite valor. Es la historia del servicio hecha forma: de lo pesado a lo claro, con dirección.
 
 ### 2.2 Análisis del logo elemento por elemento
 
-**Composición:** símbolo superior (~72% del alto) + wordmark + bajada "SOLUTIONS".
+**Composición:** símbolo (3 barras + punto) a la izquierda + wordmark "StarkCore" + bajada "SOLUTIONS" en mono. Lockup horizontal.
 
 | Elemento | Descripción | Significado de marca |
 |---|---|---|
-| **"S" de dos cintas** | Formada por dos trazos gruesos con extremos en **corte angular (~45°)**, con sensación de movimiento | El proceso mismo: dos flujos que se articulan entre sí |
-| **Flecha ascendente** | Sale del centro hacia **arriba-derecha**, fuera del encuadre de la S | Crecimiento, extrapolación, optimización — el resultado que escapa al límite del proceso actual |
-| **Estrella de 4 puntas** | Destello en el centro de la S, es el piso de luz más claro de toda la marca (`#0BDBFF`) | El **core**: el núcleo que emite valor; la simplificación que ilumina el proceso |
-| **Órbita elíptica** | Elipse que cruza detrás de la S de abajo-izquierda a arriba-derecha | **Conexión**: sistemas y herramientas orbitando un mismo núcleo |
-| **Degradado diagonal** | De más oscuro abajo-izquierda (`#0445B2`, luminancia 63) a más brillante arriba-derecha (`#056DDA`, luminancia 95) | La misma narrativa de la flecha: de lo pesado a lo claro — **transformación** |
-| **Wordmark bicolor** | `STARK` en tinta navy (`#03123D`) + `CORE` en azul vivo (`#036FF6`), unión exacta entre ambas palabras | El nombre codifica la marca: **solidez (navy) → tecnología (azul)** |
-| **"SOLUTIONS"** | Mayúsculas, peso ligero, tracking muy amplio (`~0.5em`), flanqueado por dos reglas horizontales azules | Seriedad y método; las reglas dan estructura y contención |
-| **Fondo transparente** | Sin caja, sin contorno | La marca se adapta al fondo (con la restricción de §2.5-D) |
+| **Tres barras diagonales** | Tres trazos gruesos paralelos inclinados ~45° (corte angular en los extremos), en azul medio con degradado sutil | El proceso mismo: flujos repetibles, en ritmo, que avanzan con método |
+| **Escalera de azules** | Barra más oscura (navy) → media → más viva (`#0088F8`) | Progresión: de lo manual/pesado a lo automatizado/claro — **transformación** |
+| **Punto cian** | Círculo `#0BDBFF` en la punta superior derecha, alineado con la dirección de las barras | El **core**: el núcleo que emite valor; la chispa que culmina el proceso |
+| **Wordmark bicolor** | `Stark` en tinta navy (`#001038`) + `Core` en azul vivo (`#0088F8`), unión exacta | El nombre codifica la marca: **solidez (navy) → tecnología (azul)** |
+| **"SOLUTIONS"** | Roboto Mono, mayúsculas, tracking amplio (`0.22em`), gris-navy `#54607C` | Seriedad y método; ancla tipográfica del sistema de etiquetas |
+| **Fondo transparente** | Sin caja, sin contorno | La marca se adapta al fondo (con la restricción de §2.5-B) |
 
-**Tipografía del wordmark:** sans-serif en mayúsculas, peso bold, cajas geométricas con proporciones regulares y terminaciones limpias. Este rasgo guía la elección tipográfica del sistema (§4): se eligió una sans geométrica de bajo contraste, no una serif ni una display decorativa.
+**Tipografía del wordmark:** sans-serif geométrica en minúscula/mayúscula mixta ("StarkCore", no todo mayúsculas), peso bold, cajas limpias. Este rasgo guía la elección tipográfica del sistema (§4): sans geométrica de bajo contraste.
 
-**Proporciones:** relación aprox. 3:2 (612 × 408). El símbolo ocupa el ancho casi completo; el wordmark se alinea a los márgenes del símbolo.
+**Proporciones:** lockup horizontal ~5:2. El símbolo ocupa la cuota izquierda; "SOLUTIONS" se alinea al inicio del wordmark.
 
 ### 2.3 Sensación que debe producir la marca
 
-Movimiento controlado, precisión, luz y dirección. Nunca caos, nunca quietud. La marca debe sentirse **en marcha**, no estática ni decorativa.
+Dirección, ritmo y precisión. Las barras sugieren avance continuo; el punto, un logro concreto. Nunca caos, nunca quietud: la marca debe sentirse **en marcha**, profesional y sobria.
 
 ### 2.4 Lenguaje visual derivado (qué tomamos del logo para la interfaz)
 
 | Rasgo del logo | Traducción al sistema |
 |---|---|
-| Corte angular de 45° en los extremos | **Elemento de firma**: chevron/corte angular en diagonal, usado máximo 2 veces por página (§7.11) |
+| Corte angular de 45° en las barras | **Elemento de firma**: chevron/corte angular en diagonal, usado máximo 2 veces por página (§7.11) |
 | Diagonal ascendente | Composiciones con tensión diagonal sutil: visuales del hero alineados en diagonal ascendente, nunca simetría absoluta |
-| Degradado navy → cian | Uso **solo** en elementos puntuales de énfasis (barra de proceso, borde de acento), nunca en fondos grandes ni en títulos |
+| Escalera navy → azul → cian | Uso **solo** en elementos puntuales de énfasis (barra de proceso, borde de acento), nunca en fondos grandes ni en títulos |
 | Wordmark bicolor | Recursos editoriales: un término clave de un titular puede recibir el azul vivo (`#0088F8`) para crear jerarquía |
 | Tracking amplio de "SOLUTIONS" | **Eyebrows y etiquetas** en mono, mayúsculas, tracking `0.14em` |
-| Órbita / círculos | Iconografía lineal con radios y trazos consistentes (2px), no iconos rellenos multicolor |
+| Barras paralelas | Iconografía lineal con radios y trazos consistentes (2px), no iconos rellenos multicolor |
 
 ### 2.5 Decisiones y supuestos documentados
 
 | # | Ambigüedad detectada | Decisión tomada | Razonamiento |
 |---|---|---|---|
-| **A** | El logo tiene efecto de brillo/degradado "3D" de estilo 2010s | **Se conserva el logo intacto**, pero el sistema de la interfaz es **plano y sobrio** (sin biselados, sin brillos, sin sombras metálicas) | Reproducir el efecto 3D en UI produciría el look anticuado que la marca quiere evitar; el logo aporta color y forma, no el estilo de render |
-| **B** | No existe versión monocroma ni versión sobre fondo oscuro | **Regla temporal**: el logo se usa únicamente sobre fondos claros (blanco, `#FBFCFE`, `#F3F6FB`). No se altera el archivo. | Garantiza legibilidad sin modificar la marca. Si más adelante se aprueba una versión blanca/negro sólido, se documentará aquí |
-| **C** | La paleta del logo es 100% fría (verificado: **0 píxeles con dominancia roja**) | Los colores semánticos de estado (success/warning/error) **son funcionales, no decorativos**: solo aparecen en formularios, validaciones y estados de sistema | Se evita contaminar la firma cromática con calidez que la marca no tiene |
+| **A** | El logo original tenía efecto de brillo/degradado "3D" de estilo 2010s | **Se conserva el logo intacto**, pero el sistema de la interfaz es **plano y sobrio** (sin biselados, sin brillos, sin sombras metálicas) | Reproducir el efecto 3D en UI produciría el look anticuado que la marca quiere evitar; el logo aporta color y forma, no el estilo de render |
+| **B** | El logo no tiene versión monocroma ni versión sobre fondo oscuro | **Regla**: el logo se usa preferiblemente sobre fondos claros (blanco, `#FBFCFE`, `#F3F6FB`). En bandas navy (footer), usar la versión con wordmark en blanco (`stitch/logo-blanco.png`, pendiente de generar) o wordmark en texto blanco. No se altera el archivo original. | Garantiza legibilidad sin modificar la marca. Si más adelante se aprueba una versión blanca/negro sólido, se documentará aquí |
+| **C** | La paleta del logo es 100% fría | Los colores semánticos de estado (success/warning/error) **son funcionales, no decorativos**: solo aparecen en formularios, validaciones y estados de sistema | Se evita contaminar la firma cromática con calidez que la marca no tiene |
 | **D** | No hay tipografía oficial asociada al wordmark | Se eligió **DM Sans** para títulos y cuerpo + **Roboto Mono** para etiquetas: sans geométricas de Google Fonts, coherentes con las formas geométricas del logo | Primera elección (Space Grotesk + IBM Plex) se descartó tras evaluarla con el diseño de Stitch: la personalidad de la fuente peleaba con el layout (feedback del proyecto) |
 | **E** | No está definido el tono de voz por escrito | Español neutro, de segunda persona (**tú**), directo, sin jerga innecesaria ni promesas vacías | Cercanía con PYMES colombianas sin perder seriedad |
-| **F** | El logo tiene fondo transparente y detalle fino (destello) | Tamaño mínimo de uso: **120 px** de ancho en pantalla; margen de respiro mínimo = **25%** del alto del logo | Por debajo de eso la estrella central y "SOLUTIONS" se colapsan |
+| **F** | El logo original tiene fondo transparente y detalle fino (destello) | Tamaño mínimo de uso: **120 px** de ancho en pantalla; margen de respiro mínimo = **25%** del alto del logo | Por debajo de eso el detalle fino se colapsa |
+| **G** | El dueño del proyecto definió un **nuevo símbolo** (3 barras + punto cian) que reemplaza a la "S" con órbita y flecha del logo original | **Se adopta el nuevo logo** (`stitch/logo-sitioweb.png` + `stitch/code.html`) como fuente visual oficial. El wordmark bicolor ("Stark" navy + "Core" azul) y la paleta se conservan. El logo original queda como referencia histórica en `starkcore-logo.png` | Decisión del dueño del proyecto (2026-10-08). El nuevo símbolo es más plano, geométrico y contemporáneo; encaja mejor con el sistema de interfaz plano y sobrio |
 
 ---
 
@@ -162,10 +162,10 @@ El logo trabaja dos polos: navy casi negro (`#001038`, luminancia 11%) y cian ca
 El azul saturado (`#0088F8`, saturación 100%) se reserva para acciones y énfasis; las superficies usan neutros con saturación baja (6%–50%). Saturación alta extendida cansa la vista y transmite "juguetón"; saturación alta puntual transmite **energía con control**.
 
 **5. Cian (189°) = la chispa**
-Derivado de la estrella del logo. Es innovación, claridad y luz. Uso **< 10%** de la interfaz: es el destello, no el cuadro.
+Derivado del punto cian del nuevo logo. Es innovación, claridad y luz. Uso **< 10%** de la interfaz: es el destello, no el cuadro.
 
-**6. Narrativa del degradado navy → cian**
-El degradado diagonal del logo es literalmente la historia del servicio: **de lo oscuro y pesado (proceso manual) a lo claro y ligero (proceso automatizado)**. Se usa como metáfora en momentos puntuales, nunca como fondo decorativo generalizado.
+**6. Narrativa de la escalera navy → azul → cian**
+Las tres barras del logo escalan de oscuro a claro hacia el punto cian: es literalmente la historia del servicio — **de lo oscuro y pesado (proceso manual) a lo claro y ligero (proceso automatizado)**. Se usa como metáfora en momentos puntuales, nunca como fondo decorativo generalizado.
 
 **7. Nota cultural y de público**
 El objetivo es una PYME colombiana tradicional. Paleta conservadora = percepción de solidez y menor riesgo. Se descartan explícitamente el **morado/violeta** (cliché de startup de IA), los degradados arcoíris, el neón y los gradientes multicolor: son señales de "plantilla", no de empresa seria.
@@ -494,7 +494,7 @@ La implementación usa shadcn/ui como base **nunca como estética final**. Todo 
 
 - Banda **navy** `#001038`, sin excepción.
 - Texto principal blanco; secundario `#A8B4CC` (8.90 ✓); links `#BDE0FD` → hover cian `#0BDBFF`.
-- Estructura: logo (versión clara pendiente §2.5-B → sobre navy se usa el logo **solo si** se aprueba versión monocroma; hasta entonces, wordmark en texto blanco), 3–4 columnas de enlaces, contacto directo (email, WhatsApp), línea inferior con `Roboto Mono` 12px (©, ubicación "Barranquilla, Colombia").
+- Estructura: logo en versión clara (wordmark en blanco sobre navy, o versión monocroma aprobada — ver §2.5-B), 3–4 columnas de enlaces, contacto directo (email, WhatsApp), línea inferior con `Roboto Mono` 12px (©, ubicación "Barranquilla, Colombia").
 - Aire generoso: padding `64px` superior/inferior.
 
 ### 7.7 Badges y Eyebrows
@@ -687,7 +687,7 @@ Reglas: títulos alineados a la izquierda, bandas alternando blanco/gris azulado
 7. [ ] Secciones en el orden de §9.2 con bandas de §3.7.
 8. [ ] Motion solo según §8.3 + `prefers-reduced-motion`.
 9. [ ] Auditoría de contraste (§3.6) y responsive 360px.
-10. [ ] Logo sin modificar, solo sobre fondos claros.
+10. [ ] Logo nuevo (`stitch/logo-sitioweb.png`) sin modificar; sobre fondos claros preferiblemente; en footer navy usar wordmark en blanco (§2.5-B).
 
 ---
 
