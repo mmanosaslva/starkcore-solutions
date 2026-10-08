@@ -22,7 +22,7 @@
 
 ✅ **Opción A adoptada (2026-10-08)**: el nuevo logo (`logo-sitioweb.png` / `code.html`) **es la fuente visual oficial** del sitio. Registrado en `../docs/design.md` **§2.5-G** (v1.1).
 
-- El logo original (`../starkcore-logo.png`, la "S" con órbita) queda como **referencia histórica**.
+- El logo original (`starkcore-logo.png`, la "S" con órbita) queda como **referencia histórica** en el historial de git (retirado del repo).
 - El wordmark bicolor ("Stark" navy + "Core" azul) y la paleta (navy/azul/cian) se conservan.
 - `prohibiciones.md` §2.2 prohíbe modificar el logo: se usa tal cual.
 
@@ -35,5 +35,5 @@
 - [x] Paleta del nuevo logo verificada contra `design.md` §3.2 (navy/azul/cian).
 - [x] SVG (`code.html`) y PNG (`logo-sitioweb.png`) consistentes.
 - [ ] Legible a 120px de ancho (mínimo de uso en `design.md` §2.5-F) — verificar al implementar.
-- [ ] Sobre banda navy (footer): definir versión blanca (`logo-blanco.png` pendiente de generar) — `design.md` §2.5-B.
+- [x] Sobre banda navy (footer) y favicon: variantes definidas en `design.md` §2.5-H (`logo-navy.svg` se genera en la Fase 2).
 - [ ] Registro de marca ante la SIC considerado (`plan-legal.md` §5).
