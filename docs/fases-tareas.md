@@ -20,7 +20,7 @@
 
 | ✓ | ID | Tarea | Responsable | Depende de | Terminado cuando |
 |---|---|---|---|---|---|
-| [ ] | T0.1 | Crear repo en GitHub (este), rama `mvp`, dar acceso a Daniel, proteger `main` (PR + 1 aprobación) | Mery | — | Daniel puede abrir PRs; push directo a `main` bloqueado |
+| [x] | T0.1 | Crear repo en GitHub (este), rama `mvp`, dar acceso a Daniel, proteger `main` (PR + 1 aprobación) | Mery | — | Daniel puede abrir PRs; push directo a `main` bloqueado |
 | [ ] | T0.2 | 2FA en GitHub (ambos) y en el Gmail de la empresa (llave de acceso o app, no SMS); delegación o gestor de contraseñas para Gmail | Ambos | — | Las dos cuentas de GitHub y el Gmail con 2FA |
 | [ ] | T0.3 | Crear cuenta Vercel **Hobby** con el GitHub de Mery; confirmar que el nombre de proyecto `starkcore-solutions` está libre (define la URL `starkcore-solutions.vercel.app`) | Mery | T0.1 | Nombre confirmado y anotado en `plan-sitio.md` §4 |
 | [ ] | T0.4 | Crear cuenta **Brevo** con el Gmail de la empresa, 2FA, verificar el remitente `contacto.starkcore.solutions@gmail.com`, crear API key "formulario-web" | Daniel | T0.2 | API key guardada en el gestor de contraseñas (nunca en el repo) |
