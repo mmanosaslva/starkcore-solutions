@@ -103,7 +103,7 @@ Se implementa el orden de `design.md` §9.2, alineado con el patrón de las refe
 
 **MVP (decisión #16): se publica en el subdominio gratuito de Vercel**, sin comprar dominio. Costo total: $0.
 
-- **URL de producción:** `https://starkcore-solutions.vercel.app` (o el nombre de proyecto disponible en Vercel). HTTPS y HSTS los pone Vercel automáticamente (`vercel.app` está en la lista de precarga HSTS de los navegadores).
+- **URL de producción:** `https://starkcore-solutions.vercel.app` — nombre de proyecto en Vercel **confirmado disponible** el 2026-10-10 (T0.3; 2FA activo en la cuenta). HTTPS y HSTS los pone Vercel automáticamente (`vercel.app` está en la lista de precarga HSTS de los navegadores).
 - **Correo publicado:** `contacto.starkcore.solutions@gmail.com` (decisión #8).
 - **WhatsApp Business:** +57 322 611 0864 (`https://wa.me/573226110864`), con mensaje de bienvenida automático que enlaza a `/privacidad`.
 - **Despliegue:** Vercel conectado al repo de GitHub; producción desde `main`, previews por PR **con Deployment Protection y sin API key de Brevo** (`plan-seguridad.md` §5.4); previews no indexables.
