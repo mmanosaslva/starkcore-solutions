@@ -117,7 +117,7 @@ Es el único punto de entrada de datos. Controles (todos en el **servidor**):
 
 1. Gestor de paquetes con lockfile commiteado (`package-lock.json` / `pnpm-lock.yaml`); instalar con `npm ci` en CI.
 2. Dependencias solo las necesarias; cada una justificada (`prohibiciones.md` §1.5).
-3. **CI con GitHub Actions** (gratis) en cada PR: `npm ci`, `lint`, `prettier --check`, `tsc --noEmit`, `npm audit --audit-level=high`. Las acciones de terceros se fijan por SHA.
+3. **CI con GitHub Actions** (gratis) en cada PR: `npm ci`, `lint`, `prettier --check`, `typecheck` (`next typegen && tsc --noEmit`), `npm audit --omit=dev --audit-level=high`. Las acciones de terceros se fijan por SHA. La auditoría bloqueante cubre la cadena de **producción** (lo que se despliega); vulnerabilidades en dependencias de desarrollo se siguen con las alertas de Dependabot (T6.2, revisión semanal) — decisión 2026-10-14: `braces` (GHSA-vfj7-8cjw-p6xm) no tiene versión corregida y su cadena es solo de herramientas de desarrollo.
 4. **Dependabot** activado para alertas y actualizaciones de seguridad.
 5. Scripts postinstall de terceros: revisar antes de aceptar.
 6. No usar CDNs de scripts no confiables en producción (el sitio debe poder cargar con lo mínimo). Única excepción: Turnstile (`challenges.cloudflare.com`).
