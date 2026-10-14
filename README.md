@@ -18,17 +18,17 @@ El plan de trabajo y la documentación del sitio web. El sitio será una **landi
 
 Toda la documentación vive en [`docs/`](docs/):
 
-| Archivo | Qué es |
-|---|---|
-| [`docs/design.md`](docs/design.md) | **Design system oficial** (identidad visual extraída del logo): paleta, tipografía, componentes, motion, estructura de la landing |
-| [`docs/reglas.md`](docs/reglas.md) | Reglas del proyecto (diseño, código, seguridad, proceso). Obligatorias para todo el desarrollo |
-| [`docs/prohibiciones.md`](docs/prohibiciones.md) | Lista dura de lo que **no** se puede hacer. Mismo peso que `reglas.md` |
-| [`docs/plan-sitio.md`](docs/plan-sitio.md) | **Plan del sitio**: alcance, páginas, stack, fases de implementación |
-| [`docs/plan-seguridad.md`](docs/plan-seguridad.md) | **Seguridad técnica**: cabeceras, formulario, secretos, dependencias, monitoreo |
-| [`docs/fases-tareas.md`](docs/fases-tareas.md) | **Fases y tareas** asignadas a Mery y Daniel, con criterios de terminado y guía de despliegue en Vercel |
-| [`docs/plan-legal.md`](docs/plan-legal.md) | **Seguridad legal**: Ley 1581 (datos personales), Ley 1480 (consumidor), propiedad intelectual, avisos obligatorios |
-| [`stitch/`](stitch/) | Referencia visual: logo del sitio (`logo-sitioweb.png`, `code.html`) y tokens de diseño exportados (`DESIGN.md`) |
-| *(historial de git)* `starkcore-logo.png` | Logo **histórico** original de la marca, retirado del repo (reemplazado por el nuevo; ver `design.md` §2.5-G) |
+| Archivo                                            | Qué es                                                                                                                            |
+| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| [`docs/design.md`](docs/design.md)                 | **Design system oficial** (identidad visual extraída del logo): paleta, tipografía, componentes, motion, estructura de la landing |
+| [`docs/reglas.md`](docs/reglas.md)                 | Reglas del proyecto (diseño, código, seguridad, proceso). Obligatorias para todo el desarrollo                                    |
+| [`docs/prohibiciones.md`](docs/prohibiciones.md)   | Lista dura de lo que **no** se puede hacer. Mismo peso que `reglas.md`                                                            |
+| [`docs/plan-sitio.md`](docs/plan-sitio.md)         | **Plan del sitio**: alcance, páginas, stack, fases de implementación                                                              |
+| [`docs/plan-seguridad.md`](docs/plan-seguridad.md) | **Seguridad técnica**: cabeceras, formulario, secretos, dependencias, monitoreo                                                   |
+| [`docs/fases-tareas.md`](docs/fases-tareas.md)     | **Fases y tareas** asignadas a Mery y Daniel, con criterios de terminado y guía de despliegue en Vercel                           |
+| [`docs/plan-legal.md`](docs/plan-legal.md)         | **Seguridad legal**: Ley 1581 (datos personales), Ley 1480 (consumidor), propiedad intelectual, avisos obligatorios               |
+| [`stitch/`](stitch/)                               | Referencia visual: logo del sitio (`logo-sitioweb.png`, `code.html`) y tokens de diseño exportados (`DESIGN.md`)                  |
+| _(historial de git)_ `starkcore-logo.png`          | Logo **histórico** original de la marca, retirado del repo (reemplazado por el nuevo; ver `design.md` §2.5-G)                     |
 
 > **Regla raíz**: el orden de verdad es `docs/design.md` → `docs/reglas.md` → `docs/prohibiciones.md` → planes → código. Cualquier conflicto se resuelve hacia arriba, y los cambios se aprueban antes de implementarse.
 
