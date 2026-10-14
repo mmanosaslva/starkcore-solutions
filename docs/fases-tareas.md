@@ -37,7 +37,7 @@
 | ✓ | ID | Tarea | Responsable | Depende de | Terminado cuando |
 |---|---|---|---|---|---|
 | [x] | T1.1 | `create-next-app`: App Router, TypeScript strict, ESLint, Prettier, `.gitignore` con `.env*` | Daniel | T0.1 | `npm run lint`, `prettier --check .` y `tsc --noEmit` limpios |
-| [ ] | T1.2 | CI con GitHub Actions (`npm ci`, lint, prettier, tsc, `npm audit --audit-level=high`, acciones fijadas por SHA) + Dependabot + secret scanning/push protection | Daniel | T1.1 | CI corre y bloquea el merge si falla (`plan-seguridad.md` §6) |
+| [x] | T1.2 | CI con GitHub Actions (`npm ci`, lint, prettier, tsc, `npm audit --audit-level=high`, acciones fijadas por SHA) + Dependabot + secret scanning/push protection | Daniel | T1.1 | CI corre y bloquea el merge si falla (`plan-seguridad.md` §6) |
 | [ ] | T1.3 | Estructura i18n: mensajes en `es` y helper para leerlos; librería justificada en `docs/` (p. ej. `next-intl`) | Daniel | T1.1 | Ningún texto visible queda fuera del archivo de mensajes (`reglas.md` §3.6) |
 | [ ] | T1.4 | Tokens de `design.md` §7.1 en `globals.css`, Tailwind (contenedor 1200px, radios, sombras), fuentes DM Sans + Roboto Mono con `next/font` | Mery | T1.1 | Página de prueba con colores, tipos y radios de `design.md` |
 | [ ] | T1.5 | shadcn/ui: instalar solo los componentes MVP de `design.md` §7.1 y reescribir variantes (botón primary navy / accent con texto navy / outline / ghost, inputs, cards) | Mery | T1.4 | Ningún componente con estilo por defecto (`prohibiciones.md` §2.6) |
