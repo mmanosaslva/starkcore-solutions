@@ -23,8 +23,8 @@
 | [x] | T0.1 | Crear repo en GitHub (este), rama `mvp`, dar acceso a Daniel, proteger `main` (PR + 1 aprobación) | Mery | — | Daniel puede abrir PRs; push directo a `main` bloqueado |
 | [x] | T0.2 | 2FA en GitHub (ambos) y en el Gmail de la empresa (llave de acceso o app, no SMS); delegación o gestor de contraseñas para Gmail | Ambos | — | Las dos cuentas de GitHub y el Gmail con 2FA |
 | [x] | T0.3 | Crear cuenta Vercel **Hobby** con el GitHub de Mery, **activar 2FA** (passkey o app, no SMS); confirmar que el nombre de proyecto `starkcore-solutions` está libre (define la URL `starkcore-solutions.vercel.app`) | Mery | T0.1 | Nombre confirmado y anotado en `plan-sitio.md` §4; 2FA activo |
-| [ ] | T0.4 | Crear cuenta **Brevo** con el Gmail de la empresa, 2FA, verificar el remitente `contacto.starkcore.solutions@gmail.com`, crear API key "formulario-web" | Daniel | T0.2 | API key guardada en el gestor de contraseñas (nunca en el repo) |
-| [ ] | T0.5 | Crear cuenta **Cloudflare** (solo para Turnstile), 2FA, crear widget con hostnames `starkcore-solutions.vercel.app` y `localhost` | Daniel | T0.3 | Site key + secret key en el gestor de contraseñas |
+| [x] | T0.4 | Crear cuenta **Brevo** con el Gmail de la empresa, 2FA, verificar el remitente `contacto.starkcore.solutions@gmail.com`, crear API key "formulario-web" | Daniel | T0.2 | API key guardada en el gestor de contraseñas (nunca en el repo) |
+| [-] | T0.5 | Crear cuenta **Cloudflare** (solo para Turnstile), 2FA, crear widget con hostnames `starkcore-solutions.vercel.app` y `localhost` | Daniel | T0.3 | Site key + secret key en el gestor de contraseñas |
 | [ ] | T0.6 | WhatsApp Business: PIN de verificación en dos pasos, perfil de empresa (Barranquilla, horario) | Dueño del número | — | PIN activo; perfil completo |
 | [ ] | T0.7 | Contactar abogado: enviarle `plan-legal.md` y las preguntas de §2.1, §3.4 (Gmail sin DPA), §9 y la cita del RNBD | Ambos | — | Abogado contratado y con fecha de revisión |
 
