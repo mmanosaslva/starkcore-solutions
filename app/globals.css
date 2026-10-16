@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import 'tw-animate-css';
 
 @theme inline {
   --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
@@ -15,6 +16,7 @@
 
   --color-primary: #001038;
   --color-primary-foreground: #ffffff;
+  --color-primary-hover: #0a1e56;
 
   --color-blue-50: #f2f9ff;
   --color-blue-100: #e0f1fe;
@@ -47,6 +49,7 @@
   --color-warning-soft: #fbf3e2;
   --color-error: #c0392b;
   --color-error-soft: #fdecea;
+  --color-destructive: #c0392b;
 
   --color-ring: #0088f8;
   --color-link: #006ece;
@@ -64,6 +67,12 @@
 }
 
 @layer base {
+  *,
+  ::before,
+  ::after {
+    border-color: var(--color-border);
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -72,5 +81,15 @@
   :focus-visible {
     outline: 2px solid var(--color-ring);
     outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 }
