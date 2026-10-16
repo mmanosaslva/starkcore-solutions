@@ -85,7 +85,7 @@ Se implementa el orden de `design.md` §9.2, alineado con el patrón de las refe
 | Framework | **Next.js (App Router) + TypeScript strict** | $0 | Ya aprobado en `reglas.md` §3. SSG para páginas públicas = rápido y con buen SEO |
 | UI | **Tailwind + shadcn/ui** personalizados con tokens de `design.md` §7.1 | $0 | Ya aprobado |
 | Íconos | **lucide-react** (una sola familia) | $0 | `reglas.md` §1.4 |
-| i18n | Estructura de mensajes en español (librería a justificar en la Fase 1, p. ej. `next-intl`) | $0 | `reglas.md` §3.6 |
+| i18n | **next-intl 4.x** — elegida en T1.3: estándar de App Router, tipado de claves de mensajes (TS strict), sintaxis ICU y sin routing por locale en el MVP (agregar idioma = agregar un archivo en `messages/`). Descartados: helper propio (sin ICU ni soporte futuro) e i18next (integración con App Router inferior y más superficie de la que necesita el MVP) | $0 | `reglas.md` §3.6 |
 | Formulario | Route handler de Next.js + **Brevo** (API transaccional, free: 300 emails/día). Sin dominio propio, el remitente es el Gmail verificado en Brevo (Brevo lo reescribe a un dominio suyo); se valida en la tarea T3.1 de `fases-tareas.md`. Respaldo si falla: SMTP de Gmail con contraseña de aplicación | $0 | Sin BD; el mensaje llega al buzón del equipo |
 | Antispam | **Cloudflare Turnstile** (servicio independiente, no requiere DNS en Cloudflare) | $0 | Frena bots sin estado y protege la cuota de Brevo (`plan-seguridad.md` §4.4) |
 | Buzón corporativo | **Gmail de la empresa** (`contacto.starkcore.solutions@gmail.com`), publicado tal cual mientras no haya dominio. Con dominio propio: reenvío `hola@dominio` → Gmail + "Enviar como" vía SMTP de Brevo (decisión #8) | $0 | Una sola bandeja que ya existe. Brevo **solo envía**, no recibe correo |
