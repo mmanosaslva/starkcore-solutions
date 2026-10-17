@@ -94,7 +94,7 @@ Se implementa el orden de `design.md` §9.2, alineado con el patrón de las refe
 | Hosting | **Vercel (plan Hobby, gratis)** | $0 | Deploy por git, previews, HTTPS automático, CDN y protección DDoS incluidos. *Nota: el plan gratis es "no comercial" — aceptado como riesgo en fase de portafolio; al formalizar la empresa se migra (Hostinger, Pro u otra opción)* |
 | Dominio / DNS | **MVP: subdominio gratuito de Vercel** (`starkcore-solutions.vercel.app` o el nombre disponible; decisión #16). Dominio propio: fase posterior, con DNS en el registrador apuntando a Vercel | $0 | Stack 100% gratis. Sin CDN/WAF de terceros — igual que las webs de referencia. Si en el futuro se necesita WAF/escudo, se evalúa Cloudflare (free) |
 | Analítica | **Vercel Web Analytics** (incluida en Hobby, 50k eventos/mes) | $0 | Sin cookies → no requiere banner de consentimiento (`plan-legal.md` §3.5). Alternativa gratis sin cookies: Cloudflare Web Analytics |
-| CI | **GitHub Actions** | $0 | Lint, formato, typecheck y `npm audit` en cada PR (`plan-seguridad.md` §6) |
+| CI | **GitHub Actions** | $0 | Lint, formato, typecheck y `pnpm audit` en cada PR (`plan-seguridad.md` §6) |
 
 **Reglas actualizadas:** `reglas.md` §2 (BD) y §4 (auth) y `prohibiciones.md` §3 quedan marcadas como **no aplicables al MVP**.
 
@@ -155,6 +155,7 @@ Se implementa el orden de `design.md` §9.2, alineado con el patrón de las refe
 | 15 | MSA / contratos con clientes | Se hacen **aparte** del sitio (`plan-legal.md` §10) | 2026-10-08 |
 | 16 | Dominio en el MVP | **Sin dominio propio**: se publica en `*.vercel.app` (stack 100% gratis). El dominio propio se compra en una fase posterior (pasos en §4) | 2026-10-08 |
 | 17 | Equipo y tareas | 2 desarrolladores: **Mery** y **Daniel**. Asignación en `fases-tareas.md` | 2026-10-08 |
+| 18 | **Gestor de paquetes** | **pnpm 12.14.0** (`pnpm-lock.yaml`; versión fija con `packageManager` en `package.json`). Motivos de seguridad: `node_modules` estricto (bloquea *phantom dependencies*), scripts de instalación de dependencias bloqueados por defecto y aprobados uno a uno en `pnpm-workspace.yaml` (`allowBuilds`), espera de 24 h para versiones recién publicadas (`minimumReleaseAge`) y verificación de supply chain del lockfile. Descartado npm (su bloqueo de scripts llegó en npm 12, pero no aísla el árbol). Aprobado por Mery y Daniel | 2026-10-16 |
 
 ---
 
