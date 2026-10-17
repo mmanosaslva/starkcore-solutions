@@ -1,5 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 
+import { ComponentsDemo } from './components-demo';
+
 const blueScale = [
   { token: 'blue-50', hex: '#F2F9FF', swatch: 'bg-blue-50' },
   { token: 'blue-100', hex: '#E0F1FE', swatch: 'bg-blue-100' },
@@ -286,6 +288,13 @@ export default async function TokensPage() {
             {t('linkLabel')}
           </a>
         </p>
+      </section>
+
+      <section className="mt-16">
+        <h2 className="text-[1.375rem] leading-[1.25] font-semibold tracking-[-0.01em]">
+          {t('componentsTitle')}
+        </h2>
+        <ComponentsDemo />
       </section>
     </main>
   );
