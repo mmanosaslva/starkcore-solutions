@@ -55,7 +55,7 @@
 |---|---|---|---|---|---|
 | [x] | T2.1 | Generar `logo-navy.svg` y favicon (símbolo solo) a partir de `stitch/code.html`, **solo** con los cambios de `design.md` §2.5-H | Mery | — | Archivos en `public/`; diff de colores = exactamente el de §2.5-H |
 | [ ] | T2.2 | Navbar sticky (borde al hacer scroll, CTA "Hablemos", menú móvil en `sheet`) + Footer navy (variante del logo, columnas, contacto) | Mery | T1.5, T2.1 | `design.md` §7.5 y §7.6 cumplidos a 360px y desktop |
-| [ ] | T2.3 | Hero asimétrico 7/5 con visual "antes → después" y corte angular | Mery | T1.5 | `design.md` §9.2 fila 1; titular ≤ 12 palabras |
+| [x] | T2.3 | Hero asimétrico 7/5 con visual "antes → después" y corte angular | Mery | T1.5 | `design.md` §9.2 fila 1; titular ≤ 12 palabras |
 | [ ] | T2.4 | Secciones Problemas (cards `01–04`) y Soluciones (grid + lucide, incluye servicio web) | Daniel | T1.5 | `design.md` §9.2 filas 2–3 |
 | [ ] | T2.5 | Casos como **flujos tipo** con etiqueta visible "Ejemplo ilustrativo" (sin cifras ni clientes) + Cómo trabajamos (4 pasos) | Daniel | T1.5 | `plan-sitio.md` decisión #13; `design.md` §9.2 filas 4–5 |
 | [ ] | T2.6 | Por qué StarkCore (banda navy) + CTA final (banda `blue-50`, el formulario se conecta en T3.3) | Mery | T1.5 | Nunca dos bandas navy seguidas (`design.md` §3.7) |
