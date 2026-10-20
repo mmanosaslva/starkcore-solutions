@@ -10,6 +10,8 @@
 @theme {
   --color-brand: #0088f8;
   --color-navy: #001038;
+  --color-navy-muted: #a8b4cc;
+  --color-cyan: #0bdbff;
   --color-secondary: #0050f0;
   --color-accent: #0088f8;
   --color-accent-foreground: #001038;
