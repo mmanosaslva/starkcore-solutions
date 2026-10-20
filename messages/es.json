@@ -105,5 +105,37 @@
     "sheetItemServices": "Servicios",
     "sheetItemProcess": "Proceso",
     "sheetItemContact": "Contacto"
+  },
+  "whyStarkcore": {
+    "eyebrow": "Por qué StarkCore",
+    "title": "Un equipo cercano que entiende cómo trabaja tu empresa",
+    "lead": "No vendemos tecnología por vender. Primero entendemos tu operación y después construimos lo que de verdad te sirve.",
+    "reasons": {
+      "local": {
+        "title": "Cerca de ti",
+        "text": "Estamos en Barranquilla. Podemos reunirnos contigo y conocer tu operación de primera mano."
+      },
+      "tailored": {
+        "title": "Hecho a tu medida",
+        "text": "Partimos de tus procesos y herramientas actuales, no de una plantilla genérica."
+      },
+      "support": {
+        "title": "Te acompañamos",
+        "text": "Seguimos contigo después de la entrega para ajustar lo que haga falta."
+      },
+      "technology": {
+        "title": "La tecnología es el medio",
+        "text": "El objetivo es que tu operación sea más simple, no sumar herramientas."
+      }
+    }
+  },
+  "ctaBand": {
+    "eyebrow": "Hablemos",
+    "title": "¿Tienes un proceso que te quita tiempo?",
+    "lead": "Cuéntanos cómo trabajas hoy y revisamos contigo qué se puede conectar o automatizar.",
+    "whatsapp": "Escríbenos por WhatsApp",
+    "email": "Envíanos un correo",
+    "newTab": "(se abre en una pestaña nueva)",
+    "whatsappNote": "WhatsApp es un servicio de Meta: al escribirnos por ahí aplican sus términos y su política de privacidad."
   }
 }
