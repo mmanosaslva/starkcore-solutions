@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { DM_Sans, Roboto_Mono } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
+import { Footer } from '@/components/footer';
+import { Navbar } from '@/components/navbar';
 import './globals.css';
 
 const dmSans = DM_Sans({
@@ -30,7 +32,11 @@ export default async function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="es" className={`${dmSans.variable} ${robotoMono.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          <Navbar />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
