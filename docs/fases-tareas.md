@@ -45,7 +45,7 @@
 | [x] | T1.5 | shadcn/ui: instalar solo los componentes MVP de `design.md` §7.1 y reescribir variantes (botón primary navy / accent con texto navy / outline / ghost, inputs, cards) | Mery | T1.4 | Ningún componente con estilo por defecto (`prohibiciones.md` §2.6) |
 | [x] | T1.6 | Cabeceras de seguridad y CSP de `plan-seguridad.md` §3–§3.1 en `next.config.ts` | Daniel | T1.1 | Cabeceras visibles en la respuesta de una preview |
 | [x] | T1.7 | Conectar el repo al proyecto de Vercel (previews por PR), activar **Deployment Protection** en previews, `noindex` fuera de producción; probar un deploy de un commit de Daniel | Mery | T0.3, T1.1 | Las previews salen protegidas; decidida la salida de la nota de Hobby |
-| [ ] | T1.8 | Verificar contrastes de `design.md` §3.6 con los tokens reales | Mery | T1.4 | Todas las parejas de color de la tabla en AA o mejor |
+| [x] | T1.8 | Verificar contrastes de `design.md` §3.6 con los tokens reales | Mery | T1.4 | Todas las parejas de color de la tabla en AA o mejor |
 
 ---
 

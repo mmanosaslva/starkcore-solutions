@@ -20,7 +20,7 @@ export function ComponentsDemo() {
   return (
     <div className="mt-6 flex flex-col gap-12">
       <div>
-        <p className="text-muted-foreground-2 font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
+        <p className="text-muted-foreground font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
           {t('subButtons')}
         </p>
         <div className="mt-4 flex flex-wrap items-center gap-4">
@@ -30,7 +30,7 @@ export function ComponentsDemo() {
           <Button variant="ghost">{t('buttonGhost')}</Button>
           <Button variant="link">{t('buttonLink')}</Button>
         </div>
-        <p className="text-muted-foreground-2 mt-8 font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
+        <p className="text-muted-foreground mt-8 font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
           {t('subButtonSizes')}
         </p>
         <div className="mt-4 flex flex-wrap items-center gap-4">
@@ -45,7 +45,7 @@ export function ComponentsDemo() {
       </div>
 
       <div>
-        <p className="text-muted-foreground-2 font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
+        <p className="text-muted-foreground font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
           {t('subBadge')}
         </p>
         <div className="mt-4 flex flex-wrap items-center gap-4">
@@ -54,7 +54,7 @@ export function ComponentsDemo() {
       </div>
 
       <div>
-        <p className="text-muted-foreground-2 font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
+        <p className="text-muted-foreground font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
           {t('subInputs')}
         </p>
         <div className="mt-4 grid max-w-md gap-6">
@@ -83,7 +83,7 @@ export function ComponentsDemo() {
       </div>
 
       <div>
-        <p className="text-muted-foreground-2 font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
+        <p className="text-muted-foreground font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
           {t('subCards')}
         </p>
         <div className="mt-4 grid gap-6 md:grid-cols-3">
@@ -116,7 +116,7 @@ export function ComponentsDemo() {
       </div>
 
       <div>
-        <p className="text-muted-foreground-2 font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
+        <p className="text-muted-foreground font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
           {t('subSheet')}
         </p>
         <div className="mt-4">
