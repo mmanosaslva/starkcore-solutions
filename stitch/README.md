@@ -35,5 +35,5 @@
 - [x] Paleta del nuevo logo verificada contra `design.md` §3.2 (navy/azul/cian).
 - [x] SVG (`code.html`) y PNG (`logo-sitioweb.png`) consistentes.
 - [ ] Legible a 120px de ancho (mínimo de uso en `design.md` §2.5-F) — verificar al implementar.
-- [x] Sobre banda navy (footer) y favicon: variantes definidas en `design.md` §2.5-H (`logo-navy.svg` se genera en la Fase 2).
+- [x] Sobre banda navy (footer) y favicon: variantes definidas en `design.md` §2.5-H (generadas en T2.1: `public/logo-navy.svg`, `app/icon.svg` y `app/favicon.ico`; el original sin cambios en `public/logo.svg`).
 - [ ] Registro de marca ante la SIC considerado (`plan-legal.md` §5).
