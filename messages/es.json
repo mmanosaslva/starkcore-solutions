@@ -3,6 +3,31 @@
     "title": "StarkCore Solutions",
     "description": "Empresa de software que simplifica, conecta, automatiza y optimiza la operación de PYMES en Barranquilla, Colombia."
   },
+  "navbar": {
+    "label": "Navegación principal",
+    "home": "StarkCore Solutions, ir al inicio",
+    "links": {
+      "problems": "Problemas",
+      "solutions": "Soluciones",
+      "cases": "Casos",
+      "process": "Cómo trabajamos"
+    },
+    "cta": "Hablemos",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "menuTitle": "Menú"
+  },
+  "footer": {
+    "tagline": "Simplificamos, conectamos, automatizamos y optimizamos la operación de PYMES.",
+    "navTitle": "Navegación",
+    "contactLink": "Contacto",
+    "contactTitle": "Contacto",
+    "emailLabel": "Correo",
+    "whatsappLabel": "WhatsApp",
+    "newTab": "(se abre en una pestaña nueva)",
+    "copyright": "© 2026 StarkCore Solutions. Todos los derechos reservados.",
+    "location": "Barranquilla, Colombia"
+  },
   "home": {
     "eyebrow": "Software para PYMES · Barranquilla",
     "title": "Conectamos y <accent>automatizamos</accent> los procesos que hoy haces a mano",
