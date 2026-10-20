@@ -108,6 +108,7 @@ Se implementa el orden de `design.md` §9.2, alineado con el patrón de las refe
 - **Correo publicado:** `contacto.starkcore.solutions@gmail.com` (decisión #8).
 - **WhatsApp Business:** +57 322 611 0864 (`https://wa.me/573226110864`), con mensaje de bienvenida automático que enlaza a `/privacidad`.
 - **Despliegue:** Vercel conectado al repo de GitHub; producción desde `main`, previews por PR **con Deployment Protection y sin API key de Brevo** (`plan-seguridad.md` §5.4); previews no indexables.
+  - Verificado el 2026-10-20 (T1.7): proyecto conectado al repo con *Production Branch* = `main`; *Deployment Protection* en modo *Standard* (las previews redirigen al login de Vercel); Vercel añade `X-Robots-Tag: noindex` a las previews por defecto, así que no se duplica en `next.config.ts`; *Git Fork Protection* activa.
 - **Paso detallado:** ver `fases-tareas.md`, Fase 5.
 
 **Cuando se compre un dominio propio** (fase posterior, ~$10–15/año; `starkcoresolutions.com` / `.co` / `starkcore.com.co`, verificar marca en `plan-legal.md` §5):

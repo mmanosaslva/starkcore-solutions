@@ -29,6 +29,8 @@
 | [ ] | T0.7 | Contactar abogado: enviarle `plan-legal.md` y las preguntas de §2.1, §3.4 (Gmail sin DPA), §9 y la cita del RNBD | Ambos | — | Abogado contratado y con fecha de revisión |
 
 > ⚠️ **Vercel Hobby es de una sola persona** (no admite equipos). El proyecto queda en la cuenta de Mery. Si Vercel bloquea los despliegues de commits hechos por Daniel (pasa con repos privados en Hobby), las salidas gratis son: hacer el repo **público** (los secretos siguen en Vercel, no en el repo) o que Mery haga los merges. Se decide en T1.7.
+>
+> ✅ **Decidido en T1.7 (2026-10-20):** el repo es **público**, así que los commits de Daniel despliegan sin bloqueo (verificado: previews de `Danjes623` en estado `READY`). No hace falta que Mery haga los merges.
 
 ---
 
@@ -42,8 +44,8 @@
 | [x] | T1.4 | Tokens de `design.md` §7.1 en `globals.css`, Tailwind (contenedor 1200px, radios, sombras), fuentes DM Sans + Roboto Mono con `next/font` | Mery | T1.1 | Página de prueba con colores, tipos y radios de `design.md` |
 | [x] | T1.5 | shadcn/ui: instalar solo los componentes MVP de `design.md` §7.1 y reescribir variantes (botón primary navy / accent con texto navy / outline / ghost, inputs, cards) | Mery | T1.4 | Ningún componente con estilo por defecto (`prohibiciones.md` §2.6) |
 | [x] | T1.6 | Cabeceras de seguridad y CSP de `plan-seguridad.md` §3–§3.1 en `next.config.ts` | Daniel | T1.1 | Cabeceras visibles en la respuesta de una preview |
-| [ ] | T1.7 | Conectar el repo al proyecto de Vercel (previews por PR), activar **Deployment Protection** en previews, `noindex` fuera de producción; probar un deploy de un commit de Daniel | Mery | T0.3, T1.1 | Las previews salen protegidas; decidida la salida de la nota de Hobby |
-| [ ] | T1.8 | Verificar contrastes de `design.md` §3.6 con los tokens reales | Mery | T1.4 | Todas las parejas de color de la tabla en AA o mejor |
+| [x] | T1.7 | Conectar el repo al proyecto de Vercel (previews por PR), activar **Deployment Protection** en previews, `noindex` fuera de producción; probar un deploy de un commit de Daniel | Mery | T0.3, T1.1 | Las previews salen protegidas; decidida la salida de la nota de Hobby |
+| [x] | T1.8 | Verificar contrastes de `design.md` §3.6 con los tokens reales | Mery | T1.4 | Todas las parejas de color de la tabla en AA o mejor |
 
 ---
 

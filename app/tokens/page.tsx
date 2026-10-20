@@ -145,7 +145,7 @@ export default async function TokensPage() {
                 <p className="font-mono text-[0.6875rem] font-medium tracking-[0.06em] uppercase">
                   {color.token}
                 </p>
-                <p className="text-muted-foreground-2 font-mono text-[0.6875rem]">{color.hex}</p>
+                <p className="text-muted-foreground font-mono text-[0.6875rem]">{color.hex}</p>
               </div>
             </li>
           ))}
@@ -164,7 +164,7 @@ export default async function TokensPage() {
                 <p className="font-mono text-[0.6875rem] font-medium tracking-[0.06em] uppercase">
                   {color.token}
                 </p>
-                <p className="text-muted-foreground-2 font-mono text-[0.6875rem]">{color.hex}</p>
+                <p className="text-muted-foreground font-mono text-[0.6875rem]">{color.hex}</p>
               </div>
             </li>
           ))}
@@ -183,7 +183,7 @@ export default async function TokensPage() {
                 <p className="font-mono text-[0.6875rem] font-medium tracking-[0.06em] uppercase">
                   {color.token}
                 </p>
-                <p className="text-muted-foreground-2 font-mono text-[0.6875rem]">{color.hex}</p>
+                <p className="text-muted-foreground font-mono text-[0.6875rem]">{color.hex}</p>
               </div>
             </li>
           ))}
@@ -202,7 +202,7 @@ export default async function TokensPage() {
                 <p className="font-mono text-[0.6875rem] font-medium tracking-[0.06em] uppercase">
                   {color.token}
                 </p>
-                <p className="text-muted-foreground-2 font-mono text-[0.6875rem]">{color.hex}</p>
+                <p className="text-muted-foreground font-mono text-[0.6875rem]">{color.hex}</p>
               </div>
             </li>
           ))}
@@ -216,7 +216,7 @@ export default async function TokensPage() {
         <ul className="mt-6 flex flex-col gap-8">
           {typography.map((item) => (
             <li key={item.label} className="border-border border-b pb-6">
-              <p className="text-muted-foreground-2 font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
+              <p className="text-muted-foreground font-mono text-[0.6875rem] tracking-[0.06em] uppercase">
                 {item.label}
               </p>
               <div className={`mt-2 ${item.className}`}>{item.sample}</div>
@@ -239,7 +239,7 @@ export default async function TokensPage() {
                   {radius.px}
                 </span>
               </div>
-              <span className="text-muted-foreground-2 font-mono text-[0.6875rem] uppercase">
+              <span className="text-muted-foreground font-mono text-[0.6875rem] uppercase">
                 {radius.token}
               </span>
             </li>
@@ -257,7 +257,7 @@ export default async function TokensPage() {
               key={shadow.token}
               className={`border-border bg-card rounded-lg border p-6 ${shadow.className}`}
             >
-              <span className="text-muted-foreground-2 font-mono text-[0.6875rem] uppercase">
+              <span className="text-muted-foreground font-mono text-[0.6875rem] uppercase">
                 {shadow.token}
               </span>
             </li>

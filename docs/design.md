@@ -194,14 +194,14 @@ Mezcla lineal desde `#0088F8`: tintas hacia blanco puro (50–400) y sombras hac
 | Token | HEX | RGB | HSL | Contraste vs blanco | Uso |
 |---|---|---|---|---|---|
 | `blue-50` | `#F2F9FF` | 242, 249, 255 | `208°, 100%, 97%` | 1.06 | Fondos de sección suaves, hover de links |
-| `blue-100` | `#E0F1FE` | 224, 241, 254 | `207°, 95%, 87%` | 1.16 | Badges, chips, fondos de tabla |
+| `blue-100` | `#E0F1FE` | 224, 241, 254 | `207°, 95%, 87%` | 1.15 | Badges, chips, fondos de tabla |
 | `blue-200` | `#BDE0FD` | 189, 224, 253 | `207°, 96%, 74%` | 1.38 | Texto secundario **sobre navy**, bordes en oscuro |
-| `blue-300` | `#8CC9FC` | 140, 201, 252 | `207°, 94%, 64%` | 1.76 | Texto sobre navy (tamaños grandes) |
-| `blue-400` | `#47A9FA` | 71, 169, 250 | `207°, 95%, 63%` | 2.51 | Hover de botones azules |
+| `blue-300` | `#8CC9FC` | 140, 201, 252 | `207°, 94%, 64%` | 1.77 | Texto sobre navy (tamaños grandes) |
+| `blue-400` | `#47A9FA` | 71, 169, 250 | `207°, 95%, 63%` | 2.52 | Hover de botones azules |
 | **`blue-500`** | **`#0088F8`** | 0, 136, 248 | `207°, 100%, 49%` | 3.57 | **Base**: fondos de acento, botones con texto navy |
-| `blue-600` | `#006ECE` | 0, 110, 206 | `208°, 100%, 40%` | **5.12 ✓ AA** | **Texto azul y links** sobre fondo claro |
+| `blue-600` | `#006ECE` | 0, 110, 206 | `208°, 100%, 40%` | **5.10 ✓ AA** | **Texto azul y links** sobre fondo claro |
 | `blue-700` | `#0052A2` | 0, 82, 162 | `210°, 100%, 32%` | 7.70 ✓ AAA | Hover/activo de links, texto azul sobre `blue-50` |
-| `blue-800` | `#003675` | 0, 54, 117 | `213°, 100%, 23%` | 11.71 | Detalles en bandas oscuras, bordes |
+| `blue-800` | `#003675` | 0, 54, 117 | `213°, 100%, 23%` | 11.77 | Detalles en bandas oscuras, bordes |
 | `blue-900` | `#001038` | 0, 16, 56 | `223°, 100%, 11%` | 18.56 ✓ AAA | Navy principal |
 
 ### 3.4 Neutrales (tintados de navy, nunca gris puro)
@@ -239,11 +239,13 @@ El logo **no contiene ningún color cálido** (verificado: 0 píxeles con R > B)
 | Navy sobre blanco | **18.56:1** | ✓ AAA — cuerpo de texto |
 | **Navy sobre azul `#0088F8`** | **5.20:1** | ✓ AA — **botones azules llevan texto navy** |
 | Blanco sobre azul `#0088F8` | 3.57:1 | ⚠️ ✗ para texto normal — solo ≥18px bold o gráficos |
-| `blue-600 #006ECE` sobre blanco | 5.12:1 | ✓ AA — links y texto azul |
+| `blue-600 #006ECE` sobre blanco | 5.10:1 | ✓ AA — links y texto azul |
 | `muted-foreground #54607C` sobre blanco | 6.29:1 | ✓ AA |
 | Cian `#0BDBFF` sobre navy | 11.13:1 | ✓ AAA — acentos en bandas oscuras |
 | `blue-200 #BDE0FD` sobre navy | 13.48:1 | ✓ AAA — texto secundario en navy |
 | `muted #A8B4CC` sobre navy | 8.90:1 | ✓ AAA — texto terciario en navy |
+
+> Verificado con los tokens reales de `app/globals.css` el 2026-10-20 (T1.8): las 9 parejas en AA o mejor. Fórmula de luminancia relativa de WCAG 2.1.
 
 **Reglas derivadas:**
 - Texto azul sobre fondo claro → **siempre `blue-600` o más oscuro** (nunca `#0088F8` en texto pequeño).
@@ -500,7 +502,7 @@ La implementación usa shadcn/ui como base **nunca como estética final**. Todo 
 
 ### 7.7 Badges y Eyebrows
 
-- **Eyebrow:** mono 12px, UPPERCASE, tracking `0.14em`, color `#006ECE` (5.12 ✓). Prefijo opcional: **chevron angular ▸ o línea de 16px**, no bullet redondo (eco del corte del logo).
+- **Eyebrow:** mono 12px, UPPERCASE, tracking `0.14em`, color `#006ECE` (5.10 ✓). Prefijo opcional: **chevron angular ▸ o línea de 16px**, no bullet redondo (eco del corte del logo).
 - **Badge/chip:** mono 11px uppercase, fondo `#E0F1FE`, texto `#0052A2`, radio `4px`, padding `4px 8px`.
 - Uso: categorizar servicios y estados; nunca decorativo sin significado.
 
