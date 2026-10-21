@@ -9,6 +9,7 @@ import {
   WorkflowIcon,
 } from 'lucide-react';
 import { getTranslations } from 'next-intl/server';
+import { Reveal } from '@/components/reveal';
 import { SectionHeader } from '@/components/section-header';
 import { Card } from '@/components/ui/card';
 
@@ -42,17 +43,19 @@ export async function SolutionsSection() {
         />
 
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
-          {services.map(({ key, icon: Icon }) => (
+          {services.map(({ key, icon: Icon }, index) => (
             <li key={key}>
-              <Card className="h-full">
-                <Icon aria-hidden="true" className="size-6 text-blue-600" strokeWidth={2} />
-                <h3 className="text-lg leading-[1.3] font-semibold tracking-[-0.005em] md:text-xl">
-                  {t(`services.${key}.title`)}
-                </h3>
-                <p className="text-muted-foreground text-base leading-[1.65]">
-                  {t(`services.${key}.text`)}
-                </p>
-              </Card>
+              <Reveal delay={(index % 4) * 60} className="h-full">
+                <Card className="h-full" interactive>
+                  <Icon aria-hidden="true" className="size-6 text-blue-600" strokeWidth={2} />
+                  <h3 className="text-lg leading-[1.3] font-semibold tracking-[-0.005em] md:text-xl">
+                    {t(`services.${key}.title`)}
+                  </h3>
+                  <p className="text-muted-foreground text-base leading-[1.65]">
+                    {t(`services.${key}.text`)}
+                  </p>
+                </Card>
+              </Reveal>
             </li>
           ))}
         </ul>

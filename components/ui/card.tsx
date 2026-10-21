@@ -11,7 +11,8 @@ const cardVariants = cva(
         surface: 'bg-surface',
       },
       interactive: {
-        true: 'transition-[transform,border-color,box-shadow] duration-[180ms] ease-out hover:-translate-y-0.5 hover:border-border-hover hover:shadow-sm',
+        // design.md §8.3.2: the lift is a transform, so it is skipped with prefers-reduced-motion.
+        true: 'transition-[transform,border-color,box-shadow] duration-[180ms] ease-out hover:border-border-hover hover:shadow-sm motion-safe:hover:-translate-y-0.5',
       },
     },
     defaultVariants: {

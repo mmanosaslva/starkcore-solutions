@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import { Reveal } from '@/components/reveal';
 import { SectionHeader } from '@/components/section-header';
 
 const steps = ['diagnosis', 'proposal', 'implementation', 'support'] as const;
@@ -22,17 +23,19 @@ export async function ProcessSection() {
         />
 
         <ol className="lg:before:bg-border relative mt-12 grid gap-10 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-8 lg:before:absolute lg:before:top-2 lg:before:right-0 lg:before:left-0 lg:before:h-px">
-          {steps.map((key) => (
+          {steps.map((key, index) => (
             <li key={key} className="relative">
-              <span className="bg-background relative z-10 inline-block pr-3 font-mono text-sm font-medium tracking-[0.14em] text-blue-600">
-                {t(`steps.${key}.number`)}
-              </span>
-              <h3 className="mt-3 text-lg leading-[1.3] font-semibold tracking-[-0.005em] md:text-xl">
-                {t(`steps.${key}.title`)}
-              </h3>
-              <p className="text-muted-foreground mt-2 text-base leading-[1.65]">
-                {t(`steps.${key}.text`)}
-              </p>
+              <Reveal delay={(index % 4) * 60}>
+                <span className="bg-background relative z-10 inline-block pr-3 font-mono text-sm font-medium tracking-[0.14em] text-blue-600">
+                  {t(`steps.${key}.number`)}
+                </span>
+                <h3 className="mt-3 text-lg leading-[1.3] font-semibold tracking-[-0.005em] md:text-xl">
+                  {t(`steps.${key}.title`)}
+                </h3>
+                <p className="text-muted-foreground mt-2 text-base leading-[1.65]">
+                  {t(`steps.${key}.text`)}
+                </p>
+              </Reveal>
             </li>
           ))}
         </ol>

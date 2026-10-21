@@ -1,4 +1,5 @@
 import { Eyebrow } from '@/components/eyebrow';
+import { Reveal } from '@/components/reveal';
 
 // design.md §7.1 compound + §7.10: Eyebrow → H2 → optional lead, shared by the landing sections.
 export function SectionHeader({
@@ -13,7 +14,7 @@ export function SectionHeader({
   lead?: string;
 }) {
   return (
-    <>
+    <Reveal>
       <Eyebrow>{eyebrow}</Eyebrow>
       <h2
         id={id}
@@ -26,6 +27,6 @@ export function SectionHeader({
           {lead}
         </p>
       ) : null}
-    </>
+    </Reveal>
   );
 }

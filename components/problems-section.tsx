@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import { Reveal } from '@/components/reveal';
 import { SectionHeader } from '@/components/section-header';
 import { Card } from '@/components/ui/card';
 
@@ -23,19 +24,21 @@ export async function ProblemsSection() {
         />
 
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
-          {problems.map((key) => (
+          {problems.map((key, index) => (
             <li key={key}>
-              <Card className="h-full">
-                <span className="font-mono text-sm font-medium tracking-[0.14em] text-blue-600">
-                  {t(`items.${key}.number`)}
-                </span>
-                <h3 className="text-lg leading-[1.3] font-semibold tracking-[-0.005em] md:text-xl">
-                  {t(`items.${key}.title`)}
-                </h3>
-                <p className="text-muted-foreground text-base leading-[1.65]">
-                  {t(`items.${key}.text`)}
-                </p>
-              </Card>
+              <Reveal delay={(index % 4) * 60} className="h-full">
+                <Card className="h-full" interactive>
+                  <span className="font-mono text-sm font-medium tracking-[0.14em] text-blue-600">
+                    {t(`items.${key}.number`)}
+                  </span>
+                  <h3 className="text-lg leading-[1.3] font-semibold tracking-[-0.005em] md:text-xl">
+                    {t(`items.${key}.title`)}
+                  </h3>
+                  <p className="text-muted-foreground text-base leading-[1.65]">
+                    {t(`items.${key}.text`)}
+                  </p>
+                </Card>
+              </Reveal>
             </li>
           ))}
         </ul>
