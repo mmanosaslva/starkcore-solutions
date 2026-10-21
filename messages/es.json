@@ -125,5 +125,161 @@
     "sheetItemServices": "Servicios",
     "sheetItemProcess": "Proceso",
     "sheetItemContact": "Contacto"
+  },
+  "problems": {
+    "eyebrow": "Problemas",
+    "title": "¿Te suena familiar?",
+    "lead": "Cuando la operación crece más rápido que las herramientas, el día a día se llena de trabajo que no aporta.",
+    "items": {
+      "manualOrders": {
+        "number": "01",
+        "title": "Pedidos y correos a mano",
+        "text": "Cada pedido llega por correo o WhatsApp y alguien lo pasa a una hoja de cálculo. Un error de digitación termina en un reclamo."
+      },
+      "manualSecop": {
+        "number": "02",
+        "title": "SECOP revisado a diario",
+        "text": "Buscar procesos uno por uno, todos los días, consume horas que el equipo no recupera."
+      },
+      "disconnectedData": {
+        "number": "03",
+        "title": "Datos que no se hablan",
+        "text": "Inventario, facturación y clientes viven en sistemas separados: responder una pregunta exige unir todo a mano."
+      },
+      "repetitiveTasks": {
+        "number": "04",
+        "title": "Tareas repetitivas",
+        "text": "Copiar, pegar y reenviar la misma información cada semana. El equipo sostiene el proceso en vez de mejorarlo."
+      }
+    }
+  },
+  "solutions": {
+    "eyebrow": "Soluciones",
+    "title": "Lo que construimos para tu operación",
+    "lead": "Soluciones a la medida de tu empresa: partimos de lo que ya usas y conectamos lo que falta.",
+    "services": {
+      "automation": {
+        "title": "Automatización de procesos",
+        "text": "Flujos que ejecutan solos los pasos repetitivos: menos digitación y menos errores."
+      },
+      "integrations": {
+        "title": "Integraciones entre sistemas",
+        "text": "Conectamos las herramientas que ya usas para que compartan datos sin intervención manual."
+      },
+      "orders": {
+        "title": "Correos y pedidos",
+        "text": "Pedidos que llegan, se registran y se confirman sin que nadie los transcriba."
+      },
+      "notifications": {
+        "title": "Notificaciones por email y WhatsApp",
+        "text": "Avisos automáticos a clientes y equipo en el canal que ya usan."
+      },
+      "secop": {
+        "title": "Seguimiento SECOP",
+        "text": "Búsquedas y alertas automáticas de convocatorias según tus criterios."
+      },
+      "web": {
+        "title": "Presencia digital y web",
+        "text": "Sitios rápidos y claros que presentan tu negocio y abren el canal de contacto."
+      },
+      "internalTools": {
+        "title": "Herramientas internas",
+        "text": "Paneles y aplicaciones a la medida para la operación real de tu equipo."
+      },
+      "data": {
+        "title": "Datos y APIs",
+        "text": "Información centralizada y accesible, con APIs para integrarla donde la necesites."
+      }
+    }
+  },
+  "cases": {
+    "eyebrow": "Casos",
+    "title": "Así se ve un problema resuelto",
+    "lead": "Flujos tipo que muestran cómo abordamos un problema. Son ejemplos ilustrativos, no casos de clientes.",
+    "exampleLabel": "Ejemplo ilustrativo",
+    "labels": {
+      "problem": "Problema",
+      "solution": "Solución",
+      "result": "Resultado"
+    },
+    "items": {
+      "orders": {
+        "title": "Pedidos que llegan por varios canales",
+        "problem": "Los pedidos entran por WhatsApp y correo, y alguien los copia a mano en una hoja de cálculo.",
+        "solution": "Un flujo recibe el pedido, lo valida y lo registra en el sistema de la empresa.",
+        "result": "El equipo deja de transcribir y los errores de digitación desaparecen."
+      },
+      "secop": {
+        "title": "Búsqueda diaria en SECOP",
+        "problem": "Revisar convocatorias a diario para encontrar las que encajan con la empresa.",
+        "solution": "Un proceso automático consulta y filtra las convocatorias según los criterios definidos.",
+        "result": "Las oportunidades llegan al correo sin revisión manual."
+      },
+      "data": {
+        "title": "Información repartida en varios sistemas",
+        "problem": "Inventario, facturación y hojas de cálculo guardan datos que nadie ve juntos.",
+        "solution": "Se integran las fuentes en un panel único con los datos al día.",
+        "result": "Las preguntas del negocio se responden sin armar reportes a mano."
+      }
+    }
+  },
+  "process": {
+    "eyebrow": "Cómo trabajamos",
+    "title": "Cuatro pasos, sin sorpresas",
+    "lead": "Un proceso claro desde la primera conversación hasta el acompañamiento.",
+    "steps": {
+      "diagnosis": {
+        "number": "01",
+        "title": "Diagnóstico",
+        "text": "Conversamos con tu equipo y revisamos cómo funciona hoy la operación."
+      },
+      "proposal": {
+        "number": "02",
+        "title": "Propuesta",
+        "text": "Definimos alcance, tiempos y qué se automatiza primero."
+      },
+      "implementation": {
+        "number": "03",
+        "title": "Implementación",
+        "text": "Construimos por partes y validamos con tu equipo en cada entrega."
+      },
+      "support": {
+        "number": "04",
+        "title": "Acompañamiento",
+        "text": "Ajustamos lo necesario y te dejamos el control de las herramientas."
+      }
+    }
+  },
+  "whyStarkcore": {
+    "eyebrow": "Por qué StarkCore",
+    "title": "Un equipo cercano que entiende cómo trabaja tu empresa",
+    "lead": "No vendemos tecnología por vender. Primero entendemos tu operación y después construimos lo que de verdad te sirve.",
+    "reasons": {
+      "local": {
+        "title": "Cerca de ti",
+        "text": "Estamos en Barranquilla. Podemos reunirnos contigo y conocer tu operación de primera mano."
+      },
+      "tailored": {
+        "title": "Hecho a tu medida",
+        "text": "Partimos de tus procesos y herramientas actuales, no de una plantilla genérica."
+      },
+      "support": {
+        "title": "Te acompañamos",
+        "text": "Seguimos contigo después de la entrega para ajustar lo que haga falta."
+      },
+      "technology": {
+        "title": "La tecnología es el medio",
+        "text": "El objetivo es que tu operación sea más simple, no sumar herramientas."
+      }
+    }
+  },
+  "ctaBand": {
+    "eyebrow": "Hablemos",
+    "title": "¿Tienes un proceso que te quita tiempo?",
+    "lead": "Cuéntanos cómo trabajas hoy y revisamos contigo qué se puede conectar o automatizar.",
+    "whatsapp": "Escríbenos por WhatsApp",
+    "email": "Envíanos un correo",
+    "newTab": "(se abre en una pestaña nueva)",
+    "whatsappNote": "WhatsApp es un servicio de Meta: al escribirnos por ahí aplican sus términos y su política de privacidad."
   }
 }
