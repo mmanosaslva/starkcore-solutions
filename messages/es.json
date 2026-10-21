@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "StarkCore Solutions",
-    "description": "Empresa de software que simplifica, conecta, automatiza y optimiza la operación de PYMES en Barranquilla, Colombia."
+    "description": "Desarrollo de software que simplifica, conecta, automatiza y optimiza la operación de PYMES en Barranquilla, Colombia."
   },
   "navbar": {
     "label": "Navegación principal",
@@ -134,12 +134,12 @@
       "manualOrders": {
         "number": "01",
         "title": "Pedidos y correos a mano",
-        "text": "Cada pedido llega por correo o WhatsApp y alguien lo pasa a una hoja de cálculo. Un error de digitación termina en un reclamo."
+        "text": "Cada pedido llega por correo o WhatsApp y alguien lo pasa a una hoja de cálculo. Un error de digitación puede terminar en un reclamo."
       },
       "manualSecop": {
         "number": "02",
         "title": "SECOP revisado a diario",
-        "text": "Buscar procesos uno por uno, todos los días, consume horas que el equipo no recupera."
+        "text": "Buscar procesos uno por uno, todos los días, le quita al equipo tiempo que podría dedicar a otras tareas."
       },
       "disconnectedData": {
         "number": "03",
@@ -207,13 +207,13 @@
         "title": "Pedidos que llegan por varios canales",
         "problem": "Los pedidos entran por WhatsApp y correo, y alguien los copia a mano en una hoja de cálculo.",
         "solution": "Un flujo recibe el pedido, lo valida y lo registra en el sistema de la empresa.",
-        "result": "El equipo deja de transcribir y los errores de digitación desaparecen."
+        "result": "El equipo deja de transcribir pedidos y se reducen los errores de digitación."
       },
       "secop": {
         "title": "Búsqueda diaria en SECOP",
         "problem": "Revisar convocatorias a diario para encontrar las que encajan con la empresa.",
         "solution": "Un proceso automático consulta y filtra las convocatorias según los criterios definidos.",
-        "result": "Las oportunidades llegan al correo sin revisión manual."
+        "result": "Las convocatorias que encajan llegan al correo, sin buscarlas una por una."
       },
       "data": {
         "title": "Información repartida en varios sistemas",
@@ -225,7 +225,7 @@
   },
   "process": {
     "eyebrow": "Cómo trabajamos",
-    "title": "Cuatro pasos, sin sorpresas",
+    "title": "Cuatro pasos claros, de principio a fin",
     "lead": "Un proceso claro desde la primera conversación hasta el acompañamiento.",
     "steps": {
       "diagnosis": {
