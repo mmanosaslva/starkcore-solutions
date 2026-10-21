@@ -29,8 +29,28 @@
     "location": "Barranquilla, Colombia"
   },
   "home": {
-    "heading": "StarkCore Solutions",
-    "tagline": "Simplificamos, conectamos, automatizamos y optimizamos la operación de PYMES."
+    "eyebrow": "Software para PYMES · Barranquilla",
+    "title": "Conectamos y <accent>automatizamos</accent> los procesos que hoy haces a mano",
+    "lead": "Integramos tus herramientas, automatizamos pedidos, correos y notificaciones, y ordenamos tus datos para que tu equipo dedique su tiempo a lo importante.",
+    "primaryCta": "Cuéntanos tu proceso",
+    "secondaryCta": "Ver soluciones",
+    "visual": {
+      "caption": "Ejemplo de un proceso antes y después de automatizarlo: de tareas manuales dispersas a un flujo conectado.",
+      "beforeLabel": "Antes",
+      "before": {
+        "emails": "Pedidos que llegan por correo",
+        "spreadsheets": "Datos repartidos en hojas de cálculo",
+        "copyPaste": "Copiar y pegar entre sistemas",
+        "messages": "Avisos a clientes uno por uno"
+      },
+      "afterLabel": "Después",
+      "after": {
+        "receive": "Entra el pedido por correo o formulario",
+        "register": "Se registra en tu sistema",
+        "notify": "Tu cliente recibe el aviso"
+      },
+      "result": "Un flujo conectado, sin tareas repetidas"
+    }
   },
   "notFound": {
     "title": "Página no encontrada",
