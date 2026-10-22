@@ -1,13 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
-import {
-  contactEmail,
-  contactHref,
-  sectionLinks,
-  whatsappDisplay,
-  whatsappHref,
-} from '@/components/site-links';
+import { contactEmail, sectionLinks, whatsappDisplay, whatsappHref } from '@/components/site-links';
 
 const linkClass =
   'rounded-sm text-blue-200 transition-colors duration-150 hover:text-cyan focus-visible:outline-cyan';
@@ -41,11 +35,6 @@ export async function Footer() {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link href={contactHref} className={linkClass}>
-                  {t('contactLink')}
-                </Link>
-              </li>
             </ul>
           </nav>
 
