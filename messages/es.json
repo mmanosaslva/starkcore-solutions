@@ -226,7 +226,36 @@
     }
   },
   "contact": {
-    "consentLabel": "He leído y acepto la Política de Privacidad y autorizo el tratamiento de mis datos para ser contactado(a)."
+    "consentLabel": "He leído y acepto la Política de Privacidad y autorizo el tratamiento de mis datos para ser contactado(a).",
+    "formLabel": "Formulario de contacto",
+    "fields": {
+      "name": "Nombre",
+      "company": "Empresa",
+      "email": "Correo electrónico",
+      "message": "¿Qué proceso quieres mejorar?"
+    },
+    "optional": "(opcional)",
+    "messageHint": "Cuéntanos cómo lo hacen hoy y qué te gustaría cambiar.",
+    "honeypot": "No llenes este campo",
+    "errors": {
+      "required": "Este campo es obligatorio.",
+      "email": "Escribe un correo válido, por ejemplo nombre@empresa.com.",
+      "tooLong": "El texto es demasiado largo.",
+      "consent": "Debes aceptar la política de privacidad para enviar el mensaje.",
+      "turnstile": "Completa la verificación de seguridad antes de enviar."
+    },
+    "privacyNotice": "Responsables: Daniel de Jesús Mejía Fonseca y Meriyei Jari Manosalva Ferrer (StarkCore Solutions), {email}. Usamos tus datos solo para responder tu solicitud y, si lo pides, enviarte una cotización. Entregarlos es voluntario. Puedes conocer, actualizar, rectificar o suprimir tus datos y revocar esta autorización escribiendo a ese correo. Detalles en la <link>Política de Privacidad</link>.",
+    "submit": "Enviar mensaje",
+    "sending": "Enviando…",
+    "success": {
+      "title": "Mensaje enviado",
+      "text": "Gracias por escribirnos. Te responderemos al correo que nos dejaste."
+    },
+    "failure": {
+      "title": "No pudimos enviar tu mensaje",
+      "invalid": "Revisa los datos y la verificación de seguridad, y vuelve a intentarlo.",
+      "generic": "Intenta de nuevo en unos minutos o escríbenos por WhatsApp o correo."
+    }
   },
   "process": {
     "eyebrow": "Cómo trabajamos",
@@ -285,7 +314,8 @@
     "whatsapp": "Escríbenos por WhatsApp",
     "email": "Envíanos un correo",
     "newTab": "(se abre en una pestaña nueva)",
-    "whatsappNote": "WhatsApp es un servicio de Meta: al escribirnos por ahí aplican sus términos y su política de privacidad."
+    "whatsappNote": "WhatsApp es un servicio de Meta: al escribirnos por ahí aplican sus términos y su política de privacidad.",
+    "directTitle": "¿Prefieres escribirnos directo?"
   },
   "servicesPage": {
     "metadata": {
