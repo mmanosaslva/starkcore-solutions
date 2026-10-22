@@ -69,8 +69,8 @@
 
 | ✓ | ID | Tarea | Responsable | Depende de | Terminado cuando |
 |---|---|---|---|---|---|
-| [ ] | T3.1 | **Prueba de envío**: Brevo (remitente Gmail verificado) → Gmail de la empresa. Filtro en Gmail: "nunca enviar a spam" + etiqueta "Formulario-web". Si Brevo no entrega bien, aplicar el respaldo (SMTP de Gmail con contraseña de aplicación) y registrar el cambio en `plan-sitio.md` §3 | Daniel | T0.4 | 5 envíos de prueba llegan a la bandeja de entrada, etiquetados |
-| [ ] | T3.2 | Route handler del formulario: Zod (límites de `plan-seguridad.md` §4.1), body ≤ 32 KB, `Origin`, honeypot, verificación de Turnstile, saltos de línea eliminados, `Reply-To` validado, bloque de consentimiento (`plan-legal.md` §3.3.3), respuestas genéricas, sin acuse al visitante | Daniel | T3.1 | Cumple los 11 puntos de `plan-seguridad.md` §4 |
+| [x] | T3.1 | **Prueba de envío**: Brevo (remitente Gmail verificado) → Gmail de la empresa. Filtro en Gmail: "nunca enviar a spam" + etiqueta "Formulario-web". Si Brevo no entrega bien, aplicar el respaldo (SMTP de Gmail con contraseña de aplicación) y registrar el cambio en `plan-sitio.md` §3 | Daniel | T0.4 | 5 envíos de prueba llegan a la bandeja de entrada, etiquetados |
+| [x] | T3.2 | Route handler del formulario: Zod (límites de `plan-seguridad.md` §4.1), body ≤ 32 KB, `Origin`, honeypot, verificación de Turnstile, saltos de línea eliminados, `Reply-To` validado, bloque de consentimiento (`plan-legal.md` §3.3.3), respuestas genéricas, sin acuse al visitante | Daniel | T3.1 | Cumple los 11 puntos de `plan-seguridad.md` §4 |
 | [ ] | T3.3 | UI del formulario: campos, validación en cliente, checkbox no pre-marcado + aviso corto, widget Turnstile, estados cargando / error / éxito (`design.md` §7.4) | Mery | T1.5, T3.2 | Funciona con teclado y lector de pantalla; errores con ícono + texto |
 | [x] | T3.4 | Página `/servicios` | Mery | T2.4 | Contenido honesto, enlazada desde la navbar |
 | [ ] | T3.5 | Páginas `/nosotros` y `/contacto` (formulario + WhatsApp `wa.me/573226110864` + Gmail, aviso de que WhatsApp es de Meta) | Daniel | T3.3 | Enlazadas desde la navbar y el footer |

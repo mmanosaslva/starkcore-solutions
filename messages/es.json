@@ -225,6 +225,9 @@
       }
     }
   },
+  "contact": {
+    "consentLabel": "He leído y acepto la Política de Privacidad y autorizo el tratamiento de mis datos para ser contactado(a)."
+  },
   "process": {
     "eyebrow": "Cómo trabajamos",
     "title": "Cuatro pasos claros, de principio a fin",

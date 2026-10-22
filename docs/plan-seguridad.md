@@ -97,6 +97,22 @@ Es el único punto de entrada de datos. Controles (todos en el **servidor**):
 10. **Sin acuse automático al visitante** con su texto. Si se decide enviar confirmación, debe ser un texto fijo sin nada escrito por el usuario; si no, un atacante podría usar el formulario para enviar correo a terceros desde nuestro dominio.
 11. **Verificación de `Origin`**: el route handler rechaza peticiones cuyo `Origin` no sea la URL de producción (hoy `*.vercel.app`, configurada en una variable de entorno).
 
+**Contrato del endpoint** (`POST /api/contact`, implementado en T3.2):
+
+| Campo | Tipo | Regla |
+|---|---|---|
+| `name` | string | 1–100 caracteres |
+| `company` | string opcional | ≤ 120 caracteres |
+| `email` | string | ≤ 254 caracteres y formato válido |
+| `message` | string | 1–5000 caracteres |
+| `consent` | `true` | obligatorio (el checkbox no viene pre-marcado) |
+| `website` | string | honeypot: debe venir vacío; si trae valor se responde 200 sin enviar |
+| `turnstileToken` | string | token del widget de Turnstile |
+
+Respuestas (todas con `Cache-Control: no-store` y sin reflejar la entrada): `200 {"ok":true}`, `400 {"ok":false,"error":"invalid"}`, `403 {"ok":false,"error":"forbidden"}`, `413 {"ok":false,"error":"too_large"}`, `415 {"ok":false,"error":"unsupported_type"}`, `500 {"ok":false,"error":"server_error"}`.
+
+El correo al equipo incorpora el bloque de consentimiento de `plan-legal.md` §3.3.3: `consentimiento: true`, fecha y hora UTC, versión y URL de la política y el texto exacto aceptado (clave `contact.consentLabel` de `messages/es.json`). La versión sale de `privacyPolicy.effectiveDate`; mientras el borrador siga en revisión (T4.3) se registra «borrador (sin fecha de vigencia)». El punto 5 (rate limiting) queda diferido: Turnstile y el límite de 32 KB cubren el MVP.
+
 **Prohibido en el formulario:** guardar el mensaje en una BD sin política de retención, ejecutar cualquier contenido recibido, o enviar el contenido al cliente como "confirmación" sin escapar.
 
 ---
@@ -105,7 +121,7 @@ Es el único punto de entrada de datos. Controles (todos en el **servidor**):
 
 1. `.env` / `.env.local` **nunca se commitea** (`.gitignore` verificado antes del primer commit).
 2. Solo variables **no sensibles** en el cliente (`NEXT_PUBLIC_*` solo si deben ser públicas; asumir que cualquier `NEXT_PUBLIC` se expone). La *site key* de Turnstile es pública; la *secret key* es solo de servidor.
-3. API key de Brevo y secret de Turnstile **solo en el servidor**, configuradas **solo en el entorno Production** de Vercel.
+3. API key de Brevo y secret de Turnstile **solo en el servidor**, configuradas **solo en el entorno Production** de Vercel. Brevo **no debe tener lista de IPs autorizadas** (*Authorised IPs*): Vercel no ofrece IPs de salida fijas en el plan Hobby y el envío fallaría en producción (detectado en T3.1 con un `401 unauthorized` por IP no reconocida). La protección es la key solo en servidor + Turnstile + previews sin key.
 4. **Previews protegidas**: activar *Deployment Protection* (Vercel Authentication) para los despliegues de preview, y **no** dar la API key de Brevo al entorno Preview. Así una URL de preview filtrada no recibe datos reales ni envía correo antes de que existan las páginas legales.
 5. **Escaneo de secretos**: activar *secret scanning* y *push protection* de GitHub en el repositorio (si el plan del repo lo permite) o `gitleaks` como hook de pre-commit.
 6. Regla de emergencia: si un secreto se filtra al repo → rotar la clave **inmediatamente** y revisar logs del proveedor (no basta con borrar del historial sin rotar).
