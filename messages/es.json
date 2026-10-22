@@ -4,6 +4,38 @@
     "description": "Desarrollo de software que simplifica, conecta, automatiza y optimiza la operación de PYMES en Barranquilla, Colombia.",
     "titleTemplate": "%s | StarkCore Solutions"
   },
+  "aboutPage": {
+    "metadata": {
+      "title": "Nosotros",
+      "description": "Quiénes somos: los dos socios de StarkCore Solutions, con sede en Barranquilla, y cómo trabajamos con las PYMES."
+    },
+    "header": {
+      "eyebrow": "Nosotros",
+      "title": "Dos socios, una forma directa de construir software",
+      "lead": "StarkCore Solutions es un emprendimiento de Barranquilla. Trabajamos con PYMES para simplificar, conectar y automatizar su operación, sin sumar herramientas que no necesitan."
+    },
+    "team": {
+      "eyebrow": "Quiénes somos",
+      "title": "Las personas detrás de StarkCore",
+      "lead": "Somos dos socios y desarrolladores. Trabajamos contigo desde el diagnóstico hasta la entrega.",
+      "partners": {
+        "daniel": {
+          "name": "Daniel de Jesús Mejía Fonseca",
+          "role": "Socio fundador y desarrollador"
+        },
+        "meriyei": {
+          "name": "Meriyei Jari Manosalva Ferrer",
+          "role": "Socia fundadora y desarrolladora"
+        }
+      }
+    },
+    "location": {
+      "eyebrow": "Ubicación",
+      "title": "Dónde estamos",
+      "text": "Estamos en Barranquilla, Atlántico, Colombia. No tenemos oficina abierta al público: nos reunimos en tus instalaciones o en línea, según lo que te resulte más cómodo."
+    },
+    "processLink": "Ver el proceso completo"
+  },
   "navbar": {
     "label": "Navegación principal",
     "home": "StarkCore Solutions, ir al inicio",
@@ -11,7 +43,9 @@
       "problems": "Problemas",
       "services": "Servicios",
       "cases": "Casos",
-      "process": "Cómo trabajamos"
+      "process": "Cómo trabajamos",
+      "about": "Nosotros",
+      "contact": "Contacto"
     },
     "cta": "Hablemos",
     "openMenu": "Abrir menú",
@@ -21,7 +55,6 @@
   "footer": {
     "tagline": "Simplificamos, conectamos, automatizamos y optimizamos la operación de PYMES.",
     "navTitle": "Navegación",
-    "contactLink": "Contacto",
     "contactTitle": "Contacto",
     "emailLabel": "Correo",
     "whatsappLabel": "WhatsApp",
@@ -255,6 +288,47 @@
       "title": "No pudimos enviar tu mensaje",
       "invalid": "Revisa los datos y la verificación de seguridad, y vuelve a intentarlo.",
       "generic": "Intenta de nuevo en unos minutos o escríbenos por WhatsApp o correo."
+    }
+  },
+  "contactPage": {
+    "metadata": {
+      "title": "Contacto",
+      "description": "Escríbenos por formulario, WhatsApp o correo. Cuéntanos qué proceso quieres simplificar o automatizar en tu empresa."
+    },
+    "header": {
+      "eyebrow": "Contacto",
+      "title": "Cuéntanos qué proceso quieres mejorar",
+      "lead": "Escríbenos por el formulario o directamente por WhatsApp o correo. Te respondemos al correo que nos dejes."
+    },
+    "form": {
+      "title": "Escríbenos por el formulario",
+      "lead": "Cuéntanos cómo funciona hoy tu operación y qué te gustaría cambiar."
+    },
+    "direct": {
+      "locationLabel": "Ubicación",
+      "locationValue": "Barranquilla, Atlántico, Colombia",
+      "locationNote": "Nos reunimos en tus instalaciones o en línea."
+    },
+    "next": {
+      "eyebrow": "Después de escribirnos",
+      "title": "Qué pasa después",
+      "steps": {
+        "received": {
+          "number": "01",
+          "title": "Recibimos tu mensaje",
+          "text": "Llega a nuestro buzón junto con la autorización de tratamiento que aceptaste."
+        },
+        "reply": {
+          "number": "02",
+          "title": "Te respondemos",
+          "text": "Escribimos al correo que dejaste para entender mejor tu proceso."
+        },
+        "quote": {
+          "number": "03",
+          "title": "Cotizamos si quieres avanzar",
+          "text": "Si el proyecto encaja, preparamos una propuesta con alcance, tiempos y valor."
+        }
+      }
     }
   },
   "process": {

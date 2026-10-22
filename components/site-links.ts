@@ -1,13 +1,15 @@
-// Main navigation shared by Navbar and Footer: landing anchors plus the /servicios page.
+// Main navigation shared by Navbar and Footer: landing anchors plus the interior pages.
 // Anchors are prefixed with "/" so they also work from other pages.
 export const sectionLinks = [
   { key: 'problems', href: '/#problemas' },
   { key: 'services', href: '/servicios' },
   { key: 'cases', href: '/#casos' },
   { key: 'process', href: '/#proceso' },
+  { key: 'about', href: '/nosotros' },
+  { key: 'contact', href: '/contacto' },
 ] as const;
 
-export const contactHref = '/#contacto';
+export const contactHref = '/contacto';
 
 export const contactEmail = 'contacto.starkcore.solutions@gmail.com';
 export const whatsappDisplay = '+57 322 611 0864';
