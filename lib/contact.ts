@@ -1,24 +1,14 @@
 import { getTranslations } from 'next-intl/server';
-import { z } from 'zod';
 
 import { privacyPolicy } from '@/components/privacy-policy';
+import type { ContactPayload } from '@/lib/contact-schema';
 
 export const MAX_BODY_BYTES = 32 * 1024;
 export const SUBJECT_PREFIX = '[Formulario web] Nuevo contacto';
 export const SENDER_NAME = 'StarkCore Solutions — Web';
 export const POLICY_PENDING_VERSION = 'borrador (sin fecha de vigencia)';
 
-export const contactSchema = z.object({
-  name: z.string().trim().min(1).max(100),
-  company: z.string().trim().max(120).optional().default(''),
-  email: z.string().trim().max(254).email(),
-  message: z.string().trim().min(1).max(5000),
-  consent: z.literal(true),
-  website: z.string().max(200).optional().default(''),
-  turnstileToken: z.string().trim().min(1).max(2048),
-});
-
-export type ContactPayload = z.infer<typeof contactSchema>;
+export { contactSchema, type ContactPayload } from '@/lib/contact-schema';
 
 type ContactEmail = {
   subject: string;

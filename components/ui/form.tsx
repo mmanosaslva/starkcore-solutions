@@ -4,6 +4,7 @@ import * as React from 'react';
 import { cn } from 'cn';
 import type { Label as LabelPrimitive } from 'radix-ui';
 import { Slot } from 'radix-ui';
+import { CircleAlertIcon } from 'lucide-react';
 import {
   Controller,
   FormProvider,
@@ -122,7 +123,8 @@ function FormDescription({ className, ...props }: React.ComponentProps<'p'>) {
 
 function FormMessage({ className, ...props }: React.ComponentProps<'p'>) {
   const { error, formMessageId } = useFormField();
-  const body = error ? String(error?.message ?? '') : props.children;
+  // Explicit children (e.g. a translated message) win over the raw validation message.
+  const body = props.children ?? (error ? String(error.message ?? '') : null);
 
   if (!body) {
     return null;
@@ -132,9 +134,11 @@ function FormMessage({ className, ...props }: React.ComponentProps<'p'>) {
     <p
       data-slot="form-message"
       id={formMessageId}
-      className={cn('text-destructive text-sm', className)}
+      className={cn('text-destructive flex items-start gap-2 text-sm', className)}
       {...props}
     >
+      {/* design.md §7.4 / §7.9: errors never rely on color alone. */}
+      {error ? <CircleAlertIcon aria-hidden="true" className="mt-0.5 size-4 shrink-0" /> : null}
       {body}
     </p>
   );
