@@ -21,7 +21,7 @@ const robotoMono = Roboto_Mono({
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations('metadata');
   return {
-    title: t('title'),
+    title: { default: t('title'), template: t('titleTemplate') },
     description: t('description'),
   };
 }
