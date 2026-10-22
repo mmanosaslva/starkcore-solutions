@@ -61,7 +61,7 @@
 | [x] | T2.6 | Por qué StarkCore (banda navy) + CTA final (banda `blue-50`, el formulario se conecta en T3.3) | Mery | T1.5 | Nunca dos bandas navy seguidas (`design.md` §3.7) |
 | [x] | T2.7 | Copy final de toda la landing en el archivo de mensajes, sin cifras ni promesas inventadas | Mery (Daniel revisa) | T1.3 | Pasa el pilar de honestidad (`reglas.md` §5.5) |
 | [x] | T2.8 | Motion de `design.md` §8.3 (reveal una vez, hover de cards) + `prefers-reduced-motion` | Daniel | T2.2–T2.6 | Con reduced motion no hay transformaciones |
-| [ ] | T2.9 | QA cruzada: checklist `design.md` §9.4 completo a 360 / 768 / 1280 px, teclado y foco visible | Daniel revisa lo de Mery; Mery lo de Daniel | T2.1–T2.8 | Las 10 casillas de §9.4 marcadas |
+| [x] | T2.9 | QA cruzada: checklist `design.md` §9.4 completo a 360 / 768 / 1280 px, teclado y foco visible | Daniel revisa lo de Mery; Mery lo de Daniel | T2.1–T2.8 | Las 10 casillas de §9.4 marcadas |
 
 ---
 
