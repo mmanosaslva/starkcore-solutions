@@ -33,6 +33,9 @@ StarkCore Solutions **no está constituida** como sociedad: no tiene razón soci
 | Tema | Resolución |
 |---|---|
 | ¿Quién es el Responsable del tratamiento? | **Los dos socios, como personas naturales** (corresponsables), identificados por nombre completo |
+| Nombres de los Responsables | **Daniel de Jesús Mejía Fonseca** y **Meriyei Jari Manosalva Ferrer** (dato de 2026-10-21) |
+| Atención de consultas y reclamos (§3.2, punto 4) | **Ambos socios**, por `contacto.starkcore.solutions@gmail.com` |
+| Dirección para notificaciones | **Pendiente — pregunta para el abogado (T0.7)**: no hay oficina física (se atiende en las instalaciones del cliente). Confirmar si basta con domicilio en Barranquilla + correo electrónico como dirección de notificaciones, o si debe publicarse la dirección de residencia de uno de los socios u otra alternativa |
 | Qué se publica en `/aviso-legal` y `/privacidad` | Nombres completos de los socios, "StarkCore Solutions" como nombre comercial, ciudad (Barranquilla), dirección para notificaciones, correo y teléfono/WhatsApp de contacto. **No se publican números de cédula** salvo que el abogado lo exija |
 | RUT / registro mercantil | **A definir con el abogado**: si la oferta de servicios es habitual, los socios pueden requerir RUT y/o matrícula mercantil como personas naturales. Se registra la decisión aquí |
 | Al constituir la sociedad (SAS) | 1) actualizar `/aviso-legal` y `/privacidad` con razón social, NIT y dirección de notificación judicial; 2) informar a los titulares existentes del cambio de Responsable (o solicitar nueva autorización si el abogado lo indica); 3) ceder a la SAS los derechos patrimoniales del sitio y del logo (§5); 4) revisar el umbral RNBD |
@@ -171,6 +174,7 @@ La web **no se pone en producción** hasta cumplir todo esto:
 
 - [ ] Responsables del tratamiento identificados en los textos (§2.1) y decisión sobre RUT/registro tomada con el abogado
 - [ ] `/privacidad` publicada con **todo** el contenido mínimo de §3.2 (incluidos plazos de 10/15 días hábiles, área responsable, fecha de vigencia)
+- [ ] Borradores legales sin `noindex` ni etiqueta "Borrador": mientras no los apruebe el abogado, `/privacidad` lleva `robots: { index: false }` (`<meta name="robots" content="noindex">`) para que los buscadores no guarden una versión sin revisar; se quita en T4.3 y la página entra al sitemap (T5.1)
 - [ ] `/aviso-legal` publicada (proveedor + términos de uso + derechos de autor)
 - [x] ~~`/cookies` publicada~~ — ✅ **Resuelto (2026-10-08)**: analítica sin cookies (Vercel Web Analytics) → no aplica
 - [ ] Checkbox de privacidad en el formulario, obligatorio, no pre-marcado y verificado en servidor
