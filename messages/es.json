@@ -390,5 +390,146 @@
       "lead": "No manejamos precios fijos. Después de conocer tu proceso te enviamos una cotización personalizada con el alcance, los tiempos y el valor del trabajo.",
       "processLink": "Ver cómo trabajamos"
     }
+  },
+  "privacyPage": {
+    "metadata": {
+      "title": "Política de privacidad",
+      "description": "Política de tratamiento de datos personales de StarkCore Solutions: qué datos tratamos, para qué, tus derechos y cómo ejercerlos."
+    },
+    "draftNotice": "Borrador pendiente de revisión legal",
+    "eyebrow": "Legal",
+    "title": "Política de tratamiento de datos personales",
+    "lead": "Esta política explica qué datos personales tratamos cuando nos contactas, para qué los usamos, cuáles son tus derechos y cómo puedes ejercerlos, según la Ley 1581 de 2012 y el Decreto 1377 de 2013 (compilado en el Decreto 1074 de 2015).",
+    "effectiveDateLabel": "Fecha de entrada en vigencia",
+    "effectiveDatePending": "Pendiente de definir",
+    "sections": {
+      "controllers": {
+        "title": "1. Responsables del tratamiento",
+        "intro": "StarkCore Solutions es el nombre comercial de un emprendimiento que todavía no está constituido como sociedad. Los responsables del tratamiento de tus datos son sus dos socios, como personas naturales:",
+        "people": ["Daniel de Jesús Mejía Fonseca", "Meriyei Jari Manosalva Ferrer"],
+        "tradeNameLabel": "Nombre comercial",
+        "tradeName": "StarkCore Solutions",
+        "domicileLabel": "Domicilio",
+        "domicile": "Barranquilla, Atlántico, Colombia",
+        "addressLabel": "Dirección para notificaciones",
+        "address": "Pendiente de definir con el abogado",
+        "emailLabel": "Correo",
+        "phoneLabel": "Teléfono y WhatsApp"
+      },
+      "data": {
+        "title": "2. Qué datos tratamos y por qué canales",
+        "intro": "Solo tratamos los datos que nos entregas al contactarnos:",
+        "items": [
+          "Formulario de contacto: nombre, empresa (opcional), correo electrónico y mensaje.",
+          "Correo electrónico: los datos que incluyas en tu mensaje.",
+          "WhatsApp: nombre, número de teléfono y mensaje.",
+          "Datos técnicos: la dirección IP y señales técnicas del navegador que registran nuestro proveedor de hosting y la verificación antispam del formulario."
+        ],
+        "outro": "No pedimos datos sensibles (como salud o biometría), ni datos de menores de edad, ni datos de pago."
+      },
+      "purposes": {
+        "title": "3. Finalidades",
+        "intro": "Usamos tus datos únicamente para:",
+        "items": [
+          "Responder la solicitud o consulta que nos enviaste.",
+          "Gestionar comercialmente esa solicitud: preparar y enviarte cotizaciones o propuestas, y hacer seguimiento a la conversación que iniciaste.",
+          "Atender tus consultas y reclamos sobre protección de datos."
+        ],
+        "outro": "No usamos tus datos para boletines ni envíos masivos, y no los vendemos ni los cedemos a terceros. Si en el futuro quisiéramos usarlos para otra finalidad, actualizaríamos esta política y te pediríamos una nueva autorización."
+      },
+      "processing": {
+        "title": "4. Cómo tratamos tus datos",
+        "text": "No tenemos una base de datos de clientes. Los mensajes que nos envías llegan al buzón de correo corporativo, donde los consultamos para responderte y los conservamos durante el plazo de la sección 11. Por WhatsApp, la conversación queda en la cuenta de WhatsApp Business de la empresa."
+      },
+      "consent": {
+        "title": "5. Autorización",
+        "text": "Para enviar el formulario debes aceptar esta política marcando la casilla de autorización, que nunca viene marcada. Entregar tus datos es voluntario. Como prueba de tu autorización, el correo que recibimos incluye la fecha y hora del envío, la versión de esta política y el texto que aceptaste. Si nos escribes por correo o WhatsApp, los datos que nos envíes se tratarán solo para las finalidades de la sección 3."
+      },
+      "rights": {
+        "title": "6. Tus derechos",
+        "intro": "Como titular de los datos tienes derecho a:",
+        "items": [
+          "Conocer, actualizar y rectificar tus datos.",
+          "Pedir que suprimamos tus datos cuando no se respeten los principios, derechos y garantías de la ley.",
+          "Revocar la autorización que nos diste.",
+          "Solicitar la prueba de la autorización.",
+          "Ser informado, si lo pides, sobre el uso que les hemos dado a tus datos.",
+          "Acceder gratuitamente a tus datos.",
+          "Presentar quejas ante la Superintendencia de Industria y Comercio (SIC) por infracciones a la ley, una vez agotado el trámite de consulta o reclamo con nosotros."
+        ]
+      },
+      "contact": {
+        "title": "7. Quién atiende tus consultas y reclamos",
+        "text": "Los dos responsables atienden directamente las consultas y reclamos sobre tus datos. Escríbenos a <email>{address}</email> indicando tu nombre, el medio por el que te contactemos y tu solicitud."
+      },
+      "procedure": {
+        "title": "8. Procedimiento y plazos",
+        "queriesTitle": "Consultas",
+        "queries": "Respondemos en un máximo de 10 días hábiles desde que la recibimos. Si no es posible en ese plazo, te informaremos el motivo y la fecha de respuesta, que no superará 5 días hábiles adicionales.",
+        "claimsTitle": "Reclamos",
+        "claimsIntro": "Si consideras que tus datos deben corregirse, actualizarse o suprimirse, o que no cumplimos la ley, puedes presentar un reclamo. Debe incluir tu identificación, la descripción de los hechos, tu dirección o medio de contacto y los documentos que quieras hacer valer.",
+        "claims": [
+          "Si el reclamo está incompleto, te pediremos completarlo dentro de los 5 días siguientes a recibirlo. Si pasan 2 meses sin que lo completes, entenderemos que desististe.",
+          "Dentro de los 2 días hábiles siguientes a recibir el reclamo completo, marcaremos tus datos con la leyenda \"reclamo en trámite\".",
+          "Respondemos en un máximo de 15 días hábiles desde que recibimos el reclamo completo. Si no es posible, te informaremos el motivo y la fecha de respuesta, que no superará 8 días hábiles adicionales."
+        ]
+      },
+      "processors": {
+        "title": "9. Encargados y transmisión internacional",
+        "intro": "Para operar el sitio y atender tus mensajes usamos proveedores que tratan datos por nuestra cuenta (encargados). Algunos están fuera de Colombia, por lo que hay transmisión internacional de datos:",
+        "items": {
+          "vercel": {
+            "name": "Vercel",
+            "role": "Hosting del sitio, procesamiento del formulario y analítica",
+            "data": "Contenido del formulario en tránsito y dirección IP",
+            "country": "Estados Unidos"
+          },
+          "brevo": {
+            "name": "Brevo",
+            "role": "Envío del correo con tu mensaje",
+            "data": "Nombre, correo electrónico y mensaje",
+            "country": "Francia (Unión Europea)"
+          },
+          "google": {
+            "name": "Google (Gmail)",
+            "role": "Buzón de correo corporativo",
+            "data": "Tu mensaje completo y la prueba de autorización",
+            "country": "Estados Unidos"
+          },
+          "cloudflare": {
+            "name": "Cloudflare Turnstile",
+            "role": "Verificación antispam del formulario",
+            "data": "Dirección IP y señales técnicas del navegador",
+            "country": "Estados Unidos"
+          }
+        },
+        "labels": {
+          "role": "Uso",
+          "data": "Datos",
+          "country": "País"
+        },
+        "outro": "Estados Unidos y los países de la Unión Europea están en la lista de países con nivel adecuado de protección de datos de la SIC (Circular Externa 005 de 2017)."
+      },
+      "whatsapp": {
+        "title": "10. WhatsApp y otros servicios de terceros",
+        "text": "WhatsApp es un servicio de Meta. Si nos escribes por ahí, además de esta política aplican los términos y la política de privacidad de WhatsApp."
+      },
+      "retention": {
+        "title": "11. Conservación de los datos",
+        "text": "Conservamos tus datos durante 24 meses desde el último contacto comercial contigo, salvo que tengamos un contrato vigente: en ese caso los conservamos mientras dure el contrato y el tiempo que la ley exija para sus soportes. Al cumplirse el plazo, o cuando nos pidas suprimirlos, los borramos del buzón y de nuestros proveedores. Este plazo es también el período de vigencia de los datos que tratamos."
+      },
+      "security": {
+        "title": "12. Seguridad",
+        "text": "El sitio funciona solo con conexión cifrada (HTTPS). Solo los dos responsables acceden al buzón y a las cuentas de los proveedores, todas protegidas con verificación en dos pasos."
+      },
+      "cookies": {
+        "title": "13. Cookies",
+        "text": "El sitio no usa cookies de publicidad ni de analítica. La analítica de visitas es agregada y no identifica a nadie. La verificación antispam del formulario es necesaria para su seguridad y no se usa para seguimiento."
+      },
+      "changes": {
+        "title": "14. Vigencia y cambios",
+        "text": "Esta política rige desde la fecha de entrada en vigencia indicada al inicio. Si la cambiamos, publicaremos la nueva versión en esta página con su nueva fecha."
+      }
+    }
   }
 }

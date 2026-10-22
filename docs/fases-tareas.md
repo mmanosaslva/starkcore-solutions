@@ -84,7 +84,7 @@
 |---|---|---|---|---|---|
 | [ ] | T4.1 | Borrador de `/privacidad` con **todo** el contenido de `plan-legal.md` §3.2 (plazos 10/15 días hábiles, área responsable, encargados, fecha de vigencia) | Mery | — | Borrador enviado al abogado |
 | [ ] | T4.2 | Borrador de `/aviso-legal` (responsables §2.1, nombre comercial, dirección para notificaciones, teléfono, correo, términos de uso, ©) | Daniel | — | Borrador enviado al abogado |
-| [ ] | T4.3 | Revisión del abogado y ajustes; respuestas a las preguntas de T0.7 anotadas en `plan-legal.md` | Ambos | T0.7, T4.1, T4.2 | Textos aprobados por escrito por el abogado |
+| [ ] | T4.3 | Revisión del abogado y ajustes; respuestas a las preguntas de T0.7 anotadas en `plan-legal.md`. Al aprobarse: quitar el `noindex` y la etiqueta "Borrador" de `/privacidad` (y de `/aviso-legal` si se aplicó igual) y fijar la fecha de vigencia en `components/privacy-policy.ts` | Ambos | T0.7, T4.1, T4.2 | Textos aprobados por escrito por el abogado |
 | [ ] | T4.4 | Firmar el manual interno de protección de datos y el acuerdo de titularidad de derechos entre socios | Ambos | T4.3 | Documentos firmados (fuera del repo) |
 | [ ] | T4.5 | Aceptar los DPA de Vercel, Brevo y Cloudflare; guardar constancia | Daniel | T0.3–T0.5 | Fechas de aceptación anotadas en `plan-legal.md` §3.4 |
 | [ ] | T4.6 | Footer legal: enlaces a `/privacidad` y `/aviso-legal`, enlace a `www.sic.gov.co`, ©, identificación del proveedor | Mery | T2.2 | `plan-legal.md` §6 completo |
