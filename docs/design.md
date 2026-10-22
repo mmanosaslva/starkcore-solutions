@@ -217,6 +217,7 @@ Mezcla lineal desde `#0088F8`: tintas hacia blanco puro (50–400) y sombras hac
 | `border` | `#DDE4F0` | 221, 228, 240 | `218°, 39%, 90%` | Bordes de cards y separadores |
 | `border-strong` | `#C9D4E8` | 201, 212, 232 | `219°, 40%, 85%` | Bordes de inputs, botón outline |
 | `border-hover` | `#B9C9E4` | 185, 201, 228 | `218°, 43%, 81%` | Hover de cards |
+| `navy-muted` | `#A8B4CC` | 168, 180, 204 | `220°, 26%, 73%` | Texto terciario **sobre navy** (8.90 ✓ AAA) y "SOLUTIONS" del logo sobre navy (§2.5-H) |
 
 ### 3.5 Colores semánticos (solo funcionales)
 
@@ -629,16 +630,16 @@ La web es una **landing corporativa B2B**. En menos de 10 segundos debe responde
 
 ### 9.4 Criterios de éxito (anti-plantilla)
 
-- [ ] El logo aparece sin modificar sobre fondos claros (≥120px), y en el footer navy solo en la variante de §2.5-H.
-- [ ] Cada color usado está en §3.2–3.5; contraste AA verificado.
-- [ ] Se usan DM Sans + Roboto Mono — **sin Inter**.
-- [ ] Sin degradados morados ni gradientes de fondo.
-- [ ] Radios variados (8/12/16px), no uniformes.
-- [ ] Contenido mayormente alineado a la izquierda (hero no centrado).
-- [ ] Cada animación pasa el test: ¿informa o guía?
-- [ ] Funciona en móvil a 360px sin scroll horizontal.
-- [ ] La página se entiende sin imágenes: el contenido se sostiene solo.
-- [ ] Ningún elemento decorativo sin función.
+- [x] El logo aparece sin modificar sobre fondos claros (≥120px), y en el footer navy solo en la variante de §2.5-H.
+- [x] Cada color usado está en §3.2–3.5; contraste AA verificado.
+- [x] Se usan DM Sans + Roboto Mono — **sin Inter**.
+- [x] Sin degradados morados ni gradientes de fondo.
+- [x] Radios variados (8/12/16px), no uniformes.
+- [x] Contenido mayormente alineado a la izquierda (hero no centrado).
+- [x] Cada animación pasa el test: ¿informa o guía?
+- [x] Funciona en móvil a 360px sin scroll horizontal.
+- [x] La página se entiende sin imágenes: el contenido se sostiene solo.
+- [x] Ningún elemento decorativo sin función.
 
 ---
 
