@@ -3,6 +3,7 @@
 import { useSyncExternalStore } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { cn } from 'cn';
 import { MenuIcon } from 'lucide-react';
 import { useTranslations } from 'next-intl';
@@ -36,6 +37,9 @@ function useScrolled() {
 export function Navbar() {
   const t = useTranslations('navbar');
   const scrolled = useScrolled();
+  const pathname = usePathname();
+  // Only page links (not landing anchors) can be the current page.
+  const currentFor = (href: string) => (href === pathname ? 'page' : undefined);
 
   return (
     <header
@@ -62,7 +66,8 @@ export function Navbar() {
               <li key={key}>
                 <Link
                   href={href}
-                  className="text-muted-foreground hover:text-foreground after:bg-accent relative rounded-sm py-1 text-[0.9375rem] transition-colors duration-150 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100"
+                  aria-current={currentFor(href)}
+                  className="text-muted-foreground hover:text-foreground after:bg-accent aria-[current=page]:text-foreground relative rounded-sm py-1 text-[0.9375rem] transition-colors duration-150 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:transition-transform after:duration-150 hover:after:scale-x-100 aria-[current=page]:after:scale-x-100"
                 >
                   {t(`links.${key}`)}
                 </Link>
@@ -94,7 +99,8 @@ export function Navbar() {
                       <SheetClose asChild>
                         <Link
                           href={href}
-                          className="text-foreground hover:bg-surface flex min-h-11 items-center rounded-md px-3 text-lg transition-colors duration-150"
+                          aria-current={currentFor(href)}
+                          className="text-foreground hover:bg-surface aria-[current=page]:bg-surface flex min-h-11 items-center rounded-md px-3 text-lg transition-colors duration-150 aria-[current=page]:font-semibold"
                         >
                           {t(`links.${key}`)}
                         </Link>

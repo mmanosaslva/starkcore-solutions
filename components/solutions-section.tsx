@@ -1,28 +1,10 @@
-import {
-  BellIcon,
-  DatabaseIcon,
-  FileSearchIcon,
-  GlobeIcon,
-  LayoutDashboardIcon,
-  MailIcon,
-  PlugIcon,
-  WorkflowIcon,
-} from 'lucide-react';
+import Link from 'next/link';
+import { ArrowRightIcon } from 'lucide-react';
 import { getTranslations } from 'next-intl/server';
 import { Reveal } from '@/components/reveal';
 import { SectionHeader } from '@/components/section-header';
 import { Card } from '@/components/ui/card';
-
-const services = [
-  { key: 'automation', icon: WorkflowIcon },
-  { key: 'integrations', icon: PlugIcon },
-  { key: 'orders', icon: MailIcon },
-  { key: 'notifications', icon: BellIcon },
-  { key: 'secop', icon: FileSearchIcon },
-  { key: 'web', icon: GlobeIcon },
-  { key: 'internalTools', icon: LayoutDashboardIcon },
-  { key: 'data', icon: DatabaseIcon },
-] as const;
+import { services } from '@/components/services';
 
 // design.md §9.2 rows 3 and 7: band A, grid with 2px linear icons; the web service lives here in the MVP.
 export async function SolutionsSection() {
@@ -59,6 +41,14 @@ export async function SolutionsSection() {
             </li>
           ))}
         </ul>
+
+        <Link
+          href="/servicios"
+          className="text-link mt-10 inline-flex items-center gap-2 rounded-sm font-semibold underline decoration-blue-200 underline-offset-[3px] transition-colors duration-150 hover:text-blue-700 hover:decoration-blue-600"
+        >
+          {t('detailLink')}
+          <ArrowRightIcon aria-hidden="true" className="size-4" />
+        </Link>
       </div>
     </section>
   );

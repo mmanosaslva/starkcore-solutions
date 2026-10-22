@@ -1,14 +1,15 @@
 {
   "metadata": {
     "title": "StarkCore Solutions",
-    "description": "Desarrollo de software que simplifica, conecta, automatiza y optimiza la operación de PYMES en Barranquilla, Colombia."
+    "description": "Desarrollo de software que simplifica, conecta, automatiza y optimiza la operación de PYMES en Barranquilla, Colombia.",
+    "titleTemplate": "%s | StarkCore Solutions"
   },
   "navbar": {
     "label": "Navegación principal",
     "home": "StarkCore Solutions, ir al inicio",
     "links": {
       "problems": "Problemas",
-      "solutions": "Soluciones",
+      "services": "Servicios",
       "cases": "Casos",
       "process": "Cómo trabajamos"
     },
@@ -190,7 +191,8 @@
         "title": "Datos y APIs",
         "text": "Información centralizada y accesible, con APIs para integrarla donde la necesites."
       }
-    }
+    },
+    "detailLink": "Ver el detalle de los servicios"
   },
   "cases": {
     "eyebrow": "Casos",
@@ -281,5 +283,112 @@
     "email": "Envíanos un correo",
     "newTab": "(se abre en una pestaña nueva)",
     "whatsappNote": "WhatsApp es un servicio de Meta: al escribirnos por ahí aplican sus términos y su política de privacidad."
+  },
+  "servicesPage": {
+    "metadata": {
+      "title": "Servicios",
+      "description": "Automatización de procesos, integraciones, pedidos, notificaciones, seguimiento SECOP, sitios web, herramientas internas y APIs para PYMES en Barranquilla, Colombia."
+    },
+    "header": {
+      "eyebrow": "Servicios",
+      "title": "Servicios para simplificar la operación de tu empresa",
+      "lead": "Cada servicio parte de un problema concreto de tu operación. Te contamos qué incluye y cuándo tiene sentido, para que identifiques por dónde empezar."
+    },
+    "labels": {
+      "includes": "Qué incluye",
+      "fit": "Te sirve si"
+    },
+    "groups": {
+      "automation": {
+        "eyebrow": "Automatización e integración",
+        "title": "Menos trabajo manual entre tus herramientas",
+        "lead": "Conectamos lo que ya usas y automatizamos los pasos que hoy se hacen a mano."
+      },
+      "custom": {
+        "eyebrow": "Desarrollo a la medida",
+        "title": "Software hecho para tu forma de trabajar",
+        "lead": "Cuando ninguna herramienta existente encaja, construimos la que tu equipo necesita."
+      }
+    },
+    "items": {
+      "automation": {
+        "description": "Identificamos los pasos repetitivos de un proceso y los convertimos en un flujo que se ejecuta solo, con revisión de una persona donde haga falta.",
+        "includes": [
+          "Levantamiento del proceso actual con tu equipo",
+          "Flujo automatizado con reglas claras y registro de cada ejecución",
+          "Alertas cuando algo necesita revisión manual"
+        ],
+        "fit": "tu equipo repite las mismas tareas todos los días y pasa información a mano de un lugar a otro."
+      },
+      "integrations": {
+        "description": "Hacemos que tus herramientas compartan datos entre sí: hojas de cálculo, correo, sistema contable, CRM o el software que ya tengas, siempre que permita conectarse.",
+        "includes": [
+          "Revisión de qué herramientas se pueden conectar y cómo",
+          "Sincronización de datos entre sistemas",
+          "Manejo de errores para que un fallo no pase desapercibido"
+        ],
+        "fit": "tienes la misma información en dos o más sistemas y alguien la copia de uno a otro."
+      },
+      "orders": {
+        "description": "Los pedidos que llegan por correo o formulario se leen, se validan y se registran en tu sistema sin que nadie los transcriba.",
+        "includes": [
+          "Lectura de pedidos desde los canales donde llegan hoy",
+          "Validación de los datos antes de registrarlos",
+          "Confirmación al cliente y aviso al equipo"
+        ],
+        "fit": "recibes pedidos por varios canales y los digitas uno por uno."
+      },
+      "notifications": {
+        "description": "Avisos automáticos por email o WhatsApp cuando pasa algo importante: un pedido confirmado, un pago recibido, una tarea vencida.",
+        "includes": [
+          "Definición de qué eventos generan un aviso y para quién",
+          "Mensajes por email y por WhatsApp Business",
+          "Plantillas de mensaje que tu equipo puede ajustar"
+        ],
+        "fit": "tus clientes o tu equipo se enteran tarde de cosas que el sistema ya sabe."
+      },
+      "secop": {
+        "description": "Búsqueda periódica de procesos de contratación pública en SECOP según tus criterios, con un resumen de las oportunidades nuevas.",
+        "includes": [
+          "Filtros por palabras clave, entidad, ubicación y valor",
+          "Revisión automática y periódica de nuevas convocatorias",
+          "Resumen por correo con los procesos que coinciden"
+        ],
+        "fit": "tu empresa contrata con el Estado y alguien revisa SECOP a mano todos los días."
+      },
+      "web": {
+        "description": "Sitios web claros y rápidos que explican qué hace tu negocio y facilitan que un cliente te contacte.",
+        "includes": [
+          "Estructura y textos pensados para tu cliente",
+          "Diseño que se adapta a celular y computador",
+          "Formulario o enlace directo a WhatsApp y correo"
+        ],
+        "fit": "tu negocio no tiene sitio web o el que tiene no explica bien lo que haces."
+      },
+      "internalTools": {
+        "description": "Paneles y aplicaciones internas a la medida: inventarios, seguimiento de solicitudes, control de tareas o lo que tu operación necesite.",
+        "includes": [
+          "Diseño a partir de cómo trabaja tu equipo hoy",
+          "Acceso desde el navegador, sin instalar nada",
+          "Entregas por partes, validadas con quienes la van a usar"
+        ],
+        "fit": "tu operación depende de hojas de cálculo que ya se quedaron cortas."
+      },
+      "data": {
+        "description": "Centralizamos la información que hoy está repartida y la dejamos disponible donde se necesita, mediante APIs o reportes.",
+        "includes": [
+          "Unificación de datos de varias fuentes",
+          "APIs para que otros sistemas consulten la información",
+          "Reportes con los datos que tu negocio necesita revisar"
+        ],
+        "fit": "para responder una pregunta del negocio hay que juntar datos de varios archivos."
+      }
+    },
+    "quote": {
+      "eyebrow": "Cotización",
+      "title": "Cada proyecto se cotiza a la medida",
+      "lead": "No manejamos precios fijos. Después de conocer tu proceso te enviamos una cotización personalizada con el alcance, los tiempos y el valor del trabajo.",
+      "processLink": "Ver cómo trabajamos"
+    }
   }
 }
