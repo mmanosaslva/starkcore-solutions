@@ -1,7 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { getTranslations } from 'next-intl/server';
-import { contactEmail, sectionLinks, whatsappDisplay, whatsappHref } from '@/components/site-links';
+import {
+  contactEmail,
+  legalLinks,
+  sectionLinks,
+  sicHref,
+  whatsappDisplay,
+  whatsappHref,
+} from '@/components/site-links';
 
 const linkClass =
   'rounded-sm text-blue-200 transition-colors duration-150 hover:text-cyan focus-visible:outline-cyan';
@@ -58,14 +65,45 @@ export async function Footer() {
                   {whatsappDisplay}
                   <span className="sr-only"> {t('newTab')}</span>
                 </a>
+                {/* plan-legal.md §6: next to the WhatsApp link, state it is a third-party channel. */}
+                <span className="text-navy-muted mt-1 block text-sm leading-[1.6]">
+                  {t('whatsappNote')}
+                </span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="text-navy-muted mt-12 flex flex-col gap-2 border-t border-white/15 pt-6 font-mono text-xs sm:flex-row sm:justify-between">
-          <p>{t('copyright')}</p>
-          <p>{t('location')}</p>
+        {/* plan-legal.md §4 and §6: legal pages, consumer authority and provider identification. */}
+        <div className="mt-12 flex flex-col gap-4 border-t border-white/15 pt-6">
+          <nav aria-label={t('legalTitle')}>
+            <ul className="flex flex-col gap-x-6 gap-y-1 text-sm sm:flex-row sm:flex-wrap">
+              {legalLinks.map(({ key, href }) => (
+                <li key={key}>
+                  {/* No prefetch: legal pages are rarely visited, and /aviso-legal 404s until T4.2. */}
+                  <Link href={href} prefetch={false} className={`${linkClass} inline-block py-1`}>
+                    {t(`legalLinks.${key}`)}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <a
+                  href={sicHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${linkClass} inline-block py-1`}
+                >
+                  {t('sic')}
+                  <span className="sr-only"> {t('newTab')}</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <p className="text-navy-muted max-w-[75ch] text-sm leading-[1.6]">{t('provider')}</p>
+          <div className="text-navy-muted flex flex-col gap-2 font-mono text-xs sm:flex-row sm:justify-between">
+            <p>{t('copyright')}</p>
+            <p>{t('location')}</p>
+          </div>
         </div>
       </div>
     </footer>
