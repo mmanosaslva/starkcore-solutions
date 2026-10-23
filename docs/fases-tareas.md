@@ -74,7 +74,7 @@
 | [x] | T3.3 | UI del formulario: campos, validación en cliente, checkbox no pre-marcado + aviso corto, widget Turnstile, estados cargando / error / éxito (`design.md` §7.4) | Mery | T1.5, T3.2 | Funciona con teclado y lector de pantalla; errores con ícono + texto |
 | [x] | T3.4 | Página `/servicios` | Mery | T2.4 | Contenido honesto, enlazada desde la navbar |
 | [x] | T3.5 | Páginas `/nosotros` y `/contacto` (formulario + WhatsApp `wa.me/573226110864` + Gmail, aviso de que WhatsApp es de Meta) | Daniel | T3.3 | Enlazadas desde la navbar y el footer |
-| [ ] | T3.6 | Pruebas de abuso: sin checkbox, sin token de Turnstile, honeypot lleno, body gigante, `Origin` ajeno → todo rechazado; envío legítimo → llega con el bloque de consentimiento | Mery | T3.2–T3.5 | Resultado anotado en el PR |
+| [x] | T3.6 | Pruebas de abuso: sin checkbox, sin token de Turnstile, honeypot lleno, body gigante, `Origin` ajeno → todo rechazado; envío legítimo → llega con el bloque de consentimiento | Mery | T3.2–T3.5 | Resultado anotado en el PR |
 
 ---
 
@@ -101,7 +101,7 @@
 | [ ] | T5.2 | Variables de entorno en Vercel (tabla de abajo) y Deployment Protection verificada | Mery | T0.3–T0.5 | Variables cargadas; Preview **sin** API key de Brevo |
 | [ ] | T5.3 | Merge `mvp` → `main` y despliegue de producción (guía de abajo) | Mery | Fases 1–4 | Sitio en `https://starkcore-solutions.vercel.app` |
 | [ ] | T5.4 | Activar Vercel Web Analytics y comprobar que llegan visitas | Mery | T5.3 | Visitas visibles en el panel; sin cookies en el navegador |
-| [ ] | T5.5 | Revisar `plan-seguridad.md` §10 sobre la URL de producción (securityheaders.com, envío real, pruebas de T3.6) | Daniel | T5.3 | Checklist §10 completo (salvo ítems "con dominio propio") |
+| [ ] | T5.5 | Revisar `plan-seguridad.md` §10 sobre la URL de producción (securityheaders.com, envío real, pruebas de T3.6 con `node scripts/contact-abuse-test.mjs <url>`) | Daniel | T5.3 | Checklist §10 completo (salvo ítems "con dominio propio") |
 | [ ] | T5.6 | Google Search Console (propiedad por prefijo de URL, verificación con etiqueta HTML) + enviar sitemap | Daniel | T5.3 | Sitemap aceptado |
 | [ ] | T5.7 | UptimeRobot (gratis) sobre la home, con alertas al Gmail de la empresa | Daniel | T5.3 | Monitor activo |
 | [ ] | T5.8 | Prueba final en móvil real (Android + iPhone si es posible): navegación, formulario, WhatsApp | Mery | T5.3 | Sin errores |
