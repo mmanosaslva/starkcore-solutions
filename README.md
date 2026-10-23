@@ -53,6 +53,61 @@ La lista completa está en `docs/plan-sitio.md` §6.
 
 ---
 
+## Cómo levantar el proyecto
+
+Requisitos: Node.js y pnpm. Todos los comandos se corren en la raíz del proyecto.
+
+```bash
+pnpm install
+cp .env.example .env.local
+```
+
+`.env.local` está en `.gitignore` y nunca se sube. Las claves de Turnstile que trae son las de prueba (siempre pasan). Para que el formulario envíe correos reales, pega en `BREVO_API_KEY=` una **API key v3** de Brevo (empieza por `xkeysib-`, en _SMTP & API → API Keys_), sin espacios ni comillas. La _SMTP key_ (`xsmtpsib-`) no sirve: la API responde 401.
+
+**Para desarrollar** (se recarga solo al guardar):
+
+```bash
+pnpm dev
+```
+
+**Para probar como en producción** (más rápido, sin recarga):
+
+```bash
+pnpm build
+pnpm start
+```
+
+Abre la URL que muestra la terminal y detén el servidor con `Ctrl+C`.
+
+> **Puerto y `SITE_URL`**: el formulario solo acepta envíos desde el origen de `SITE_URL` (`http://localhost:3000` por defecto); desde otro origen responde 403. Si el puerto 3000 está ocupado (`ss -ltnp | grep :3000`), libéralo o usa otro puerto ajustando `SITE_URL`:
+>
+> ```bash
+> SITE_URL=http://localhost:3100 pnpm dev -p 3100
+> ```
+
+Con la API key puesta, cada envío del formulario manda un correo real a `CONTACT_TO_EMAIL`.
+
+### Comprobaciones
+
+```bash
+pnpm lint            # ESLint
+pnpm format:check    # Prettier
+pnpm typecheck       # TypeScript
+```
+
+Son las mismas que corre el CI (más `pnpm audit --prod --audit-level=high`).
+
+Pruebas de abuso del formulario (T3.6), con el servidor levantado:
+
+```bash
+node scripts/contact-abuse-test.mjs http://localhost:3000          # 13 casos que deben rechazarse
+node scripts/contact-abuse-test.mjs http://localhost:3000 --send   # un envío legítimo (correo real)
+```
+
+La URL debe coincidir con `SITE_URL`. Detalles y limitaciones al inicio del script.
+
+---
+
 ## Cómo se trabaja
 
 1. ~~Se aprueba el plan (Fase 0 de `plan-sitio.md`)~~ ✅ **Fase 0 aprobada (2026-10-08)**.
