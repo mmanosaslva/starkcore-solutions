@@ -59,6 +59,14 @@
     "emailLabel": "Correo",
     "whatsappLabel": "WhatsApp",
     "newTab": "(se abre en una pestaña nueva)",
+    "whatsappNote": "Canal de Meta: aplican sus términos y su política de privacidad.",
+    "legalTitle": "Legal",
+    "legalLinks": {
+      "privacy": "Política de privacidad",
+      "legalNotice": "Aviso legal y términos de uso"
+    },
+    "sic": "Protección al consumidor: Superintendencia de Industria y Comercio (SIC)",
+    "provider": "StarkCore Solutions es el nombre comercial de Daniel de Jesús Mejía Fonseca y Meriyei Jari Manosalva Ferrer, responsables de este sitio. Datos completos del proveedor en el aviso legal.",
     "copyright": "© 2026 StarkCore Solutions. Todos los derechos reservados.",
     "location": "Barranquilla, Colombia"
   },
