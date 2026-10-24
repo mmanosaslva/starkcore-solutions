@@ -157,14 +157,14 @@ Aunque el público es B2B, la SIC aplica el art. 50 a quien ofrezca productos/se
 
 Checklist de presencia en la web (footer + páginas):
 
-- [ ] **© 2026 StarkCore Solutions. Todos los derechos reservados.** (footer)
-- [ ] Enlace a **Política de privacidad** (`/privacidad`)
-- [ ] Enlace a **Términos de uso** (puede vivir en `/aviso-legal`)
+- [x] **© 2026 StarkCore Solutions. Todos los derechos reservados.** (footer)
+- [x] Enlace a **Política de privacidad** (`/privacidad`) en el footer
+- [x] Enlace a **Términos de uso** (vive en `/aviso-legal`): enlace en el footer (T4.6); la página llega con T4.2
 - ~~[ ] Enlace a **Política de cookies**~~ — **No aplica en el MVP**: Vercel Web Analytics no usa cookies. Se requiere solo si se incorporan cookies no esenciales en el futuro
-- [ ] Enlace a **www.sic.gov.co** como autoridad de protección al consumidor (art. 50 Ley 1480)
-- [ ] **Identificación del proveedor**: responsables (§2.1), nombre comercial, dirección para notificaciones, teléfono, email (footer o `/aviso-legal`)
-- [ ] **Checkbox de consentimiento** + aviso de privacidad corto junto al formulario
-- [ ] Junto al botón de WhatsApp: aclarar que es un canal de terceros (Meta) y aplican sus términos
+- [x] Enlace a **www.sic.gov.co** como autoridad de protección al consumidor (art. 50 Ley 1480), en el footer
+- [ ] **Identificación del proveedor**: responsables (§2.1), nombre comercial, dirección para notificaciones, teléfono, email (footer o `/aviso-legal`). El footer ya muestra responsables, nombre comercial, correo y teléfono (T4.6); la dirección para notificaciones va en `/aviso-legal` (T4.2) cuando el abogado la defina (T0.7)
+- [x] **Checkbox de consentimiento** + aviso de privacidad corto junto al formulario (T3.3)
+- [x] Junto al botón de WhatsApp: aclarar que es un canal de terceros (Meta) y aplican sus términos (banda CTA, `/contacto` y footer)
 
 ---
 
@@ -180,8 +180,8 @@ La web **no se pone en producción** hasta cumplir todo esto:
 - [ ] Checkbox de privacidad en el formulario, obligatorio, no pre-marcado y verificado en servidor
 - [ ] **Prueba de autorización**: un envío de prueba llega al buzón con el bloque de consentimiento de §3.3.3 y queda archivado en la carpeta dedicada
 - [ ] DPA aceptados de Vercel, Brevo y Cloudflare; situación de Gmail (sin DPA) revisada por el abogado (§3.4)
-- [ ] Enlace a la SIC en el footer
-- [ ] Pie de copyright en el footer
+- [x] Enlace a la SIC en el footer
+- [x] Pie de copyright en el footer
 - [ ] Email de contacto funcional para consultas/reclamos de titulares
 - [ ] Manual interno de políticas (doc interno, no público) firmado por los socios
 - [ ] Acuerdo de titularidad de derechos entre socios firmado (§5)
