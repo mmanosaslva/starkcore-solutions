@@ -55,7 +55,7 @@ export function ContactForm() {
   function errorText(field: keyof FormInput, type: string | undefined) {
     if (field === 'consent') return t('errors.consent');
     if (type === 'too_big') return t('errors.tooLong');
-    if (field === 'email' && type === 'invalid_string' && form.getValues('email').trim()) {
+    if (field === 'email' && type === 'invalid_format' && form.getValues('email').trim()) {
       return t('errors.email');
     }
     return t('errors.required');
