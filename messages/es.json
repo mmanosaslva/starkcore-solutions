@@ -646,5 +646,80 @@
         "text": "Esta política rige desde la fecha de entrada en vigencia indicada al inicio. Si la cambiamos, publicaremos la nueva versión en esta página con su nueva fecha."
       }
     }
+  },
+  "legalNoticePage": {
+    "metadata": {
+      "title": "Aviso legal y términos de uso",
+      "description": "Información del proveedor de StarkCore Solutions y términos de uso del sitio: responsables, contacto, propiedad intelectual y condiciones."
+    },
+    "draftNotice": "Borrador pendiente de revisión legal",
+    "eyebrow": "Legal",
+    "title": "Aviso legal y términos de uso",
+    "lead": "Este aviso identifica al proveedor de este sitio y explica las condiciones para usarlo. Es un borrador que está pendiente de revisión legal.",
+    "newTab": "(se abre en una pestaña nueva)",
+    "sections": {
+      "provider": {
+        "title": "1. Proveedor del sitio",
+        "intro": "StarkCore Solutions es el nombre comercial de un emprendimiento de dos socios personas naturales. Todavía no está constituido como sociedad. El proveedor de este sitio está formado por:",
+        "people": ["Daniel de Jesús Mejía Fonseca", "Meriyei Jari Manosalva Ferrer"],
+        "tradeNameLabel": "Nombre comercial",
+        "tradeName": "StarkCore Solutions",
+        "domicileLabel": "Domicilio",
+        "domicile": "Barranquilla, Atlántico, Colombia",
+        "addressLabel": "Dirección para notificaciones",
+        "address": "Pendiente de definir con el abogado",
+        "emailLabel": "Correo",
+        "phoneLabel": "Teléfono y WhatsApp",
+        "outro": "Mientras se define la dirección para notificaciones, puedes escribirnos al correo o al WhatsApp indicados."
+      },
+      "purpose": {
+        "title": "2. Objeto del sitio",
+        "text": "Este sitio presenta los servicios de StarkCore Solutions y facilita que nos contactes. Es informativo: no permite crear cuentas, pagar, contratar ni celebrar acuerdos en línea. La información publicada no constituye una oferta vinculante."
+      },
+      "terms": {
+        "title": "3. Aceptación de los términos",
+        "text": "Al navegar y usar este sitio aceptas estos términos. Si no estás de acuerdo, no uses el sitio. El uso del sitio no crea por sí solo una relación contractual con StarkCore Solutions."
+      },
+      "use": {
+        "title": "4. Uso permitido y conductas prohibidas",
+        "intro": "Puedes consultar el sitio y escribirnos por los canales disponibles. No está permitido:",
+        "items": [
+          "Intentar acceder sin autorización a sistemas, servidores, cuentas o datos.",
+          "Introducir virus, código malicioso o realizar ataques que afecten el sitio o a terceros.",
+          "Extraer contenido de forma masiva o automatizada que pueda afectar el funcionamiento del servicio.",
+          "Suplantar a otra persona o enviar información falsa.",
+          "Usar el sitio para fines ilícitos o contrarios a la ley."
+        ]
+      },
+      "ip": {
+        "title": "5. Propiedad intelectual",
+        "text": "Los textos, el diseño, el código, el logo y el nombre StarkCore Solutions son propiedad de sus socios o se usan con autorización. No se permite reproducirlos, modificarlos, distribuirlos ni usarlos comercialmente sin permiso escrito. Las marcas y contenidos de terceros pertenecen a sus titulares."
+      },
+      "services": {
+        "title": "6. Servicios, cotizaciones y disponibilidad",
+        "text": "Los servicios se describen de forma general. Cada proyecto se cotiza después de conocer el proceso y las necesidades de la empresa; no publicamos precios fijos. La información del sitio no garantiza resultados ni disponibilidad, y podemos aceptar o rechazar una solicitud."
+      },
+      "links": {
+        "title": "7. Enlaces y servicios de terceros",
+        "text": "El sitio enlaza a WhatsApp, un servicio de Meta, y a la Superintendencia de Industria y Comercio (SIC). No controlamos esos servicios: aplican sus propios términos y políticas. El enlace a la SIC es informativo y no implica respaldo."
+      },
+      "data": {
+        "title": "8. Datos personales",
+        "text": "El tratamiento de datos personales se rige por la <privacy>Política de Privacidad</privacy>. Si usas el formulario, debes aceptarla antes de enviar tus datos. Si nos escribes por WhatsApp, además de nuestra política aplican los términos y la política de privacidad de Meta."
+      },
+      "liability": {
+        "title": "9. Responsabilidad",
+        "text": "Trabajamos para mantener el sitio disponible y actualizado, pero no garantizamos que funcione sin interrupciones ni que esté libre de errores. En la medida permitida por la ley, no respondemos por daños derivados del uso del sitio o de los enlaces de terceros. Nada en estos términos limita los derechos que la ley reconoce a los consumidores."
+      },
+      "changes": {
+        "title": "10. Vigencia y cambios",
+        "text": "Podemos actualizar estos términos para reflejar cambios en el sitio o en la ley. Publicaremos la versión vigente en esta página. El uso del sitio después de un cambio implica la aceptación de la nueva versión."
+      },
+      "law": {
+        "title": "11. Ley aplicable y contacto",
+        "text": "Estos términos se rigen por las leyes de la República de Colombia. Cualquier controversia se someterá a los jueces competentes de Barranquilla, sin perjuicio de los derechos del consumidor. Para consultas o reclamos, escríbenos a <email>{emailAddress}</email> o por WhatsApp al <whatsapp>{whatsappNumber}</whatsapp>. También puedes acudir a la <sic>SIC</sic>."
+      }
+    },
+    "copyright": "© 2026 StarkCore Solutions. Todos los derechos reservados."
   }
 }

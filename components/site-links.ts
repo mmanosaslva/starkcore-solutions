@@ -17,7 +17,7 @@ export const contactEmail = 'contacto.starkcore.solutions@gmail.com';
 export const whatsappDisplay = '+57 322 611 0864';
 export const whatsappHref = 'https://wa.me/573226110864';
 
-// plan-legal.md §6: legal pages linked from the footer. /aviso-legal arrives with T4.2.
+// plan-legal.md §6: legal pages linked from the footer.
 export const legalLinks = [
   { key: 'privacy', href: privacyPolicy.path },
   { key: 'legalNotice', href: '/aviso-legal' },

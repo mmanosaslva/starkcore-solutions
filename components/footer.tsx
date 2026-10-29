@@ -80,7 +80,7 @@ export async function Footer() {
             <ul className="flex flex-col gap-x-6 gap-y-1 text-sm sm:flex-row sm:flex-wrap">
               {legalLinks.map(({ key, href }) => (
                 <li key={key}>
-                  {/* No prefetch: legal pages are rarely visited, and /aviso-legal 404s until T4.2. */}
+                  {/* No prefetch: legal pages are rarely visited. */}
                   <Link href={href} prefetch={false} className={`${linkClass} inline-block py-1`}>
                     {t(`legalLinks.${key}`)}
                   </Link>
